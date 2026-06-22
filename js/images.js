@@ -5,6 +5,7 @@ window.LEAL_IMAGES = {
   pacoteBombeiroCivilPlanos: 'assets/pacotes/bombeiro-civil-planos.png',
   pacoteNr33Nr35: 'assets/pacotes/combo-nr33-nr35.png',
   pacoteNr10Nr20: 'assets/pacotes/combo-nr10-nr20.png',
+  pacotesBanner: 'assets/pacotes/bombeiro-civil.png',
   hero: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD8UIDuSnYti18FPvraSOSe4JUKw31oBtL0JOlOUJsiEk0qQkMnlKdZfX1Jw8QHbBF8kV39XlQv6VzQFhUvsC_A1guo9icp9TOYeNvZluwjU5Z5xszKSXqXAshHUAPQ7SsI2JFxoOd1LtaQZ4ePS1EHUf4joabF9zMjwrltjuMdx8dyilE6hGM9-Q3BgeAga4ICuYAgozT2_8OnFGqhDokFg6U-jbhqRSstV1sAV1tPMJfTeh85TofQVp9YbMGdz02BjxAYIgWkjMaL',
   bombeiroCivil: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAloslstDOQTit-9-9GpUfFZUBA1PlUR2l4NAK8hXNTF_K5oo_nTavVB-nIebT7lotnLDDkkDjL7o7cS9puNV7dWaCwMmB0VuZtPNJzwhZyVP4QHwDNpUtyQLqp5PdQtUC1hy81754JBYtX3I4XEB6uHvWofNdlpLswn67xvDu5W6aazDz51Tk0HDsTX4LTTHOV8JuQTZM7LluUDNGrDg_gqrPZcORULv4Cg7n8L-QbZ9kYyI84l12l5jSMdrNh2FA-o1F515rweDdo',
   nr35: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCtzQgBfrjzaW6kf16GP2v7OLezLcnO_eO82-FupAr7oICI57dRtYpp2ovVvfsAMQF2nZD7ecEY1CB9kzgZXTn4z48kUigmPOkyiw8DO3quLVMLVCo8jzVe0HqYYimxQC1MaHspFVnX9gxeRYRRUxc6i-BovZZZGMlVPwpIHNQYaNA2jnRQbjY-tkM38IHubpVEBsE7Rk1fiUcjVk8NXGlx8ep5VlDzQN4dU6mIrRXJ6YN5MfyuyKYAOsJTZaH0OifuC36bIHncUqnL',
@@ -27,7 +28,7 @@ window.LEAL_CLIENT_LOGOS = [
   { src: 'assets/clientes/cliente-03.jpg', alt: 'Logo de cliente parceiro Leal Treinamentos' },
   { src: 'assets/clientes/cliente-04.jpg', alt: 'Logo de cliente parceiro Leal Treinamentos' },
   { src: 'assets/clientes/cliente-05.jpg', alt: 'Logo de cliente parceiro Leal Treinamentos' },
-  { src: 'assets/clientes/cliente-06.jpg', alt: 'Logo de cliente parceiro Leal Treinamentos' },
+  { src: 'assets/clientes/cliente-06.png', alt: 'Grupo Assim' },
   { src: 'assets/clientes/cliente-07.jpg', alt: 'Logo de cliente parceiro Leal Treinamentos' },
   { src: 'assets/clientes/cliente-08.jpg', alt: 'Logo de cliente parceiro Leal Treinamentos' },
 ];

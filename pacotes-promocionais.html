@@ -23,9 +23,11 @@
   <div id="site-header"></div>
 
   <main>
-    <section class="page-hero page-hero--dark relative flex items-center overflow-hidden min-h-[420px]">
-      <div class="absolute inset-0 z-0 bg-navy"></div>
-      <div class="absolute inset-0 z-0 opacity-20" style="background: radial-gradient(circle at 30% 50%, var(--yellow-safety) 0%, transparent 50%);"></div>
+    <section class="page-hero page-hero--dark relative flex items-center overflow-hidden min-h-[480px]">
+      <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover" data-leal-img="pacotesBanner" src="assets/pacotes/bombeiro-civil.png" alt="Pacotes promocionais Leal Treinamentos — capacitação e segurança do trabalho">
+        <div class="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/50"></div>
+      </div>
       <div class="relative z-10 max-w-content mx-auto px-6 lg:px-20 w-full pt-8 pb-12">
         <nav class="flex items-center gap-2 mb-6 text-on-dark-subtle text-sm reveal">
           <a class="hover:text-yellow-safety transition-colors" href="index.html">Início</a>
@@ -48,152 +50,122 @@
         <p class="mt-6 text-on-light-muted max-w-2xl mx-auto">Treinamentos com certificação válida, instrutores experientes e estrutura completa no Rio de Janeiro.</p>
       </div>
 
-      <!-- Bombeiro Civil — Planos -->
-      <div class="bc-plans-section reveal">
-        <div class="bc-plans-banner">
-          <img src="assets/pacotes/bombeiro-civil.png" alt="Curso Bombeiro Civil — Leal Treinamentos, matrículas abertas" loading="lazy">
-        </div>
-        <div class="text-center mb-8">
-          <h2 class="font-montserrat font-extrabold text-2xl md:text-3xl uppercase mb-3">Bombeiro Civil</h2>
-          <span class="bc-matricula-badge">Matrícula R$ 60,00</span>
-          <p class="text-on-light-muted text-sm max-w-xl mx-auto">Escolha o plano ideal para sua formação. Todos incluem certificação e instrutores experientes.</p>
-        </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-          <article class="bc-plan-card bc-plan-card--basico">
-            <div class="bc-plan-card__header">
-              <div class="bc-plan-card__icon" aria-hidden="true">
-                <span class="material-symbols-outlined text-3xl">person</span>
-              </div>
-              <h3 class="bc-plan-card__title">Bombeiro Civil</h3>
-            </div>
-            <ul class="bc-plan-card__list">
-              <li>Camisa do Curso</li>
-              <li>Credencial</li>
-              <li>Apostila em PDF</li>
-            </ul>
-            <p class="bc-plan-card__price">R$ 800</p>
-            <div class="bc-plan-card__cta">
-              <a class="w-full py-3 rounded-lg bg-[#2ecc71] text-white font-semibold hover:opacity-90 transition-all flex items-center justify-center gap-2 text-sm" href="https://wa.me/5521964692647?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20B%C3%81SICO%20do%20Curso%20Bombeiro%20Civil%20(R%24%20800)." target="_blank" rel="noopener">
-                Escolher Plano
-              </a>
-            </div>
-            <div class="bc-plan-card__footer">Básico</div>
-          </article>
-
-          <article class="bc-plan-card bc-plan-card--intermediario">
-            <div class="bc-plan-card__header">
-              <div class="bc-plan-card__icon" aria-hidden="true">
-                <span class="material-symbols-outlined text-3xl">person</span>
-              </div>
-              <h3 class="bc-plan-card__title">Bombeiro Civil</h3>
-            </div>
-            <ul class="bc-plan-card__list">
-              <li>Camisa, Calça e Coturno</li>
-              <li>Credencial</li>
-              <li>Curso NR 33</li>
-              <li>Curso NR 35</li>
-              <li>Apostila em PDF</li>
-            </ul>
-            <p class="bc-plan-card__price">R$ 1.200</p>
-            <div class="bc-plan-card__cta">
-              <a class="w-full py-3 rounded-lg bg-[#3498db] text-white font-semibold hover:opacity-90 transition-all flex items-center justify-center gap-2 text-sm" href="https://wa.me/5521964692647?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20INTERMEDI%C3%81RIO%20do%20Curso%20Bombeiro%20Civil%20(R%24%201.200)." target="_blank" rel="noopener">
-                Escolher Plano
-              </a>
-            </div>
-            <div class="bc-plan-card__footer">Intermediário</div>
-          </article>
-
-          <article class="bc-plan-card bc-plan-card--avancado">
-            <div class="bc-plan-card__header">
-              <div class="bc-plan-card__icon" aria-hidden="true">
-                <span class="material-symbols-outlined text-3xl">person</span>
-              </div>
-              <h3 class="bc-plan-card__title">Bombeiro Civil</h3>
-            </div>
-            <ul class="bc-plan-card__list">
-              <li>Camisa, Calça e Coturno</li>
-              <li>Credencial</li>
-              <li>Curso NR 33</li>
-              <li>Curso NR 35</li>
-              <li>Apostila em PDF</li>
-              <li>Curso de APH</li>
-              <li>Curso Stop the Bleed</li>
-            </ul>
-            <p class="bc-plan-card__price">R$ 1.500</p>
-            <div class="bc-plan-card__cta">
-              <a class="w-full py-3 rounded-lg bg-[#f1c40f] text-charcoal font-semibold hover:opacity-90 transition-all flex items-center justify-center gap-2 text-sm" href="https://wa.me/5521964692647?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20AVAN%C3%87ADO%20do%20Curso%20Bombeiro%20Civil%20(R%24%201.500)." target="_blank" rel="noopener">
-                Escolher Plano
-              </a>
-            </div>
-            <div class="bc-plan-card__footer">Avançado</div>
-          </article>
-        </div>
-      </div>
-
-      <div class="text-center mb-10 reveal">
-        <span class="section-label">Combos</span>
-        <h2 class="section-title">Outros Pacotes</h2>
-        <div class="section-divider"></div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-
+        <!-- Card 1: Bombeiro Civil -->
         <article class="promo-card reveal">
           <div class="promo-card__image">
-            <span class="promo-card__badge">Combo</span>
-            <img src="assets/pacotes/combo-nr33-nr35.png" alt="Combo promocional NR 33 + NR 35 — Espaço Confinado e Trabalho em Altura" loading="lazy">
+            <span class="promo-card__badge">Matrículas Abertas</span>
+            <img src="assets/pacotes/bombeiro-civil.png" alt="Curso Bombeiro Civil — Leal Treinamentos" loading="lazy">
           </div>
           <div class="promo-card__body">
-            <h3 class="font-montserrat font-bold text-xl mb-2">Combo NR 33 + NR 35</h3>
-            <p class="text-on-light-muted text-sm leading-relaxed mb-4 flex-grow">Dois treinamentos, mais segurança para você! Espaço Confinado e Trabalho em Altura em um único pacote promocional.</p>
-            <ul class="space-y-2 text-sm text-on-light-muted mb-6">
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">engineering</span> NR 33 — Espaço Confinado</li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">height</span> NR 35 — Trabalho em Altura</li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">workspace_premium</span> Duas certificações</li>
-            </ul>
-            <p class="promo-card__price">R$ 80<small>,00</small></p>
-            <a class="mt-4 w-full py-3 rounded-lg bg-red-alert text-white font-semibold hover:bg-red-hover transition-all flex items-center justify-center gap-2 group" href="https://wa.me/5521964692647?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Combo%20NR%2033%20%2B%20NR%2035%20(R%24%2080%2C00)." target="_blank" rel="noopener">
-              Aproveitar Oferta
-              <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
-            </a>
+            <div class="promo-card__head">
+              <h3 class="promo-card__title">Curso Bombeiro Civil</h3>
+              <p class="promo-card__meta">Matrícula: R$ 60,00</p>
+            </div>
+
+            <div class="promo-card__content">
+              <div class="promo-card__row promo-card__row--green">
+                <div class="promo-card__row-top">
+                  <span class="promo-card__row-label">Básico</span>
+                  <span class="promo-card__row-price">R$ 800</span>
+                </div>
+                <p class="promo-card__row-text">Camisa do curso · Credencial · Apostila em PDF</p>
+                <a class="promo-card__row-link" href="https://wa.me/5521964692647?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20B%C3%81SICO%20do%20Curso%20Bombeiro%20Civil%20(R%24%20800)." target="_blank" rel="noopener">Escolher →</a>
+              </div>
+
+              <div class="promo-card__row promo-card__row--blue">
+                <div class="promo-card__row-top">
+                  <span class="promo-card__row-label">Intermediário</span>
+                  <span class="promo-card__row-price">R$ 1.200</span>
+                </div>
+                <p class="promo-card__row-text">Camisa, calça e coturno · Credencial · NR 33 · NR 35 · Apostila PDF</p>
+                <a class="promo-card__row-link" href="https://wa.me/5521964692647?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20INTERMEDI%C3%81RIO%20do%20Curso%20Bombeiro%20Civil%20(R%24%201.200)." target="_blank" rel="noopener">Escolher →</a>
+              </div>
+
+              <div class="promo-card__row promo-card__row--gold">
+                <div class="promo-card__row-top">
+                  <span class="promo-card__row-label">Avançado</span>
+                  <span class="promo-card__row-price">R$ 1.500</span>
+                </div>
+                <p class="promo-card__row-text">Tudo do intermediário · Curso de APH · Curso Stop the Bleed</p>
+                <a class="promo-card__row-link" href="https://wa.me/5521964692647?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20AVAN%C3%87ADO%20do%20Curso%20Bombeiro%20Civil%20(R%24%201.500)." target="_blank" rel="noopener">Escolher →</a>
+              </div>
+            </div>
+
+            <div class="promo-card__foot">
+              <a class="promo-card__cta promo-card__cta--outline" href="https://wa.me/5521964692647?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos%20do%20Curso%20Bombeiro%20Civil." target="_blank" rel="noopener">
+                Tirar Dúvidas
+                <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+              </a>
+            </div>
           </div>
         </article>
 
+        <!-- Card 2: Combo NR 33 + NR 35 -->
+        <article class="promo-card reveal">
+          <div class="promo-card__image">
+            <span class="promo-card__badge">Combo</span>
+            <img src="assets/pacotes/combo-nr33-nr35.png" alt="Combo NR 33 + NR 35 — Espaço Confinado e Trabalho em Altura" loading="lazy">
+          </div>
+          <div class="promo-card__body">
+            <div class="promo-card__head">
+              <h3 class="promo-card__title">Combo NR 33 + NR 35</h3>
+              <p class="promo-card__desc">Dois treinamentos, mais segurança para você! Espaço Confinado e Trabalho em Altura em um único pacote.</p>
+            </div>
+
+            <div class="promo-card__content">
+              <ul class="promo-card__list">
+                <li>NR 33 — Espaço Confinado</li>
+                <li>NR 35 — Trabalho em Altura</li>
+                <li>Duas certificações válidas</li>
+              </ul>
+            </div>
+
+            <div class="promo-card__foot">
+              <p class="promo-card__price">R$ 80<small>,00</small></p>
+              <a class="promo-card__cta" href="https://wa.me/5521964692647?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Combo%20NR%2033%20%2B%20NR%2035%20(R%24%2080%2C00)." target="_blank" rel="noopener">
+                Aproveitar Oferta
+                <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Combo NR 10 + NR 20 -->
         <article class="promo-card reveal">
           <div class="promo-card__image">
             <span class="promo-card__badge">Capacitação</span>
             <img src="assets/pacotes/combo-nr10-nr20.png" alt="Combo NR 10 + NR 20 — Segurança em Eletricidade e Inflamáveis" loading="lazy">
           </div>
           <div class="promo-card__body">
-            <h3 class="font-montserrat font-bold text-xl mb-2">Combo NR 10 + NR 20</h3>
-            <p class="text-on-light-muted text-sm leading-relaxed mb-4 flex-grow">Capacitação profissional em segurança do trabalho: Segurança em Eletricidade e Inflamáveis e Combustíveis.</p>
-            <ul class="space-y-2 text-sm text-on-light-muted mb-6">
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">bolt</span> NR 10 — Segurança em Eletricidade</li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">local_fire_department</span> NR 20 — Inflamáveis e Combustíveis</li>
-              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">factory</span> Ideal para indústria</li>
-            </ul>
-            <p class="promo-card__price">Consulte <small>condições</small></p>
-            <a class="mt-4 w-full py-3 rounded-lg bg-red-alert text-white font-semibold hover:bg-red-hover transition-all flex items-center justify-center gap-2 group" href="https://wa.me/5521964692647?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Combo%20NR%2010%20%2B%20NR%2020." target="_blank" rel="noopener">
-              Solicitar Informações
-              <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
-            </a>
+            <div class="promo-card__head">
+              <h3 class="promo-card__title">Combo NR 10 + NR 20</h3>
+              <p class="promo-card__desc">Capacitação profissional em segurança do trabalho: Eletricidade e Inflamáveis e Combustíveis.</p>
+            </div>
+
+            <div class="promo-card__content">
+              <ul class="promo-card__list">
+                <li>NR 10 — Segurança em Eletricidade</li>
+                <li>NR 20 — Inflamáveis e Combustíveis</li>
+                <li>Ideal para indústria</li>
+              </ul>
+            </div>
+
+            <div class="promo-card__foot">
+              <p class="promo-card__price">Consulte <small>condições</small></p>
+              <a class="promo-card__cta" href="https://wa.me/5521964692647?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Combo%20NR%2010%20%2B%20NR%2020." target="_blank" rel="noopener">
+                Solicitar Informações
+                <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+              </a>
+            </div>
           </div>
         </article>
 
       </div>
     </section>
 
-    <section class="bg-navy text-white section-pad px-6 lg:px-20 overflow-hidden relative">
-      <div class="max-w-content mx-auto text-center relative z-10 reveal">
-        <h2 class="font-montserrat font-extrabold text-3xl mb-4">Dúvidas sobre os pacotes?</h2>
-        <p class="text-on-dark-muted mb-8 max-w-xl mx-auto">Nossa equipe está pronta para tirar suas dúvidas e ajudar na matrícula.</p>
-        <div class="flex flex-wrap justify-center gap-4">
-          <a class="btn-primary px-10 py-4 inline-flex" href="contato.html">Fale Conosco</a>
-          <a class="inline-flex items-center gap-2 px-10 py-4 rounded-lg border-2 border-white/30 text-white font-semibold hover:bg-white/10 transition-all" href="cursos.html">Ver Todos os Cursos</a>
-        </div>
-      </div>
-    </section>
+    <div id="site-cta"></div>
   </main>
 
   <div id="site-footer"></div>
@@ -204,5 +176,11 @@
   <script src="js/animations.js" defer></script>
   <script src="js/cookies.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script>
+    document.querySelectorAll('[data-leal-img]').forEach(function (el) {
+      var key = el.getAttribute('data-leal-img');
+      if (window.LEAL_IMAGES && window.LEAL_IMAGES[key]) el.src = window.LEAL_IMAGES[key];
+    });
+  </script>
 </body>
 </html>

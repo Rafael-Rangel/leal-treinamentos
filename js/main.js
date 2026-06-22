@@ -404,6 +404,12 @@
 
     /* Fallback: garante visibilidade se animações falharem */
     setTimeout(() => {
+      document.querySelectorAll('.stagger-children').forEach((wrap) => {
+        wrap.style.opacity = '1';
+        wrap.style.transform = 'none';
+        wrap.classList.add('revealed');
+      });
+
       if (!document.documentElement.classList.contains('leal-anim')) {
         document.documentElement.classList.add('leal-no-motion');
         document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => {

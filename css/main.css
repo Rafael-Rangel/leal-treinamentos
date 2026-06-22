@@ -181,12 +181,13 @@ a.group:hover .leal-logo-wrap,
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  height: 100%;
   transition: transform 0.35s var(--ease-out-expo), box-shadow 0.35s var(--ease-out-expo);
 }
 
 .promo-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(26, 44, 66, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(26, 44, 66, 0.1);
 }
 
 .promo-card__image {
@@ -194,6 +195,7 @@ a.group:hover .leal-logo-wrap,
   aspect-ratio: 16 / 10;
   overflow: hidden;
   background: #000;
+  flex-shrink: 0;
 }
 
 .promo-card__image img {
@@ -201,182 +203,223 @@ a.group:hover .leal-logo-wrap,
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transition: transform 0.5s var(--ease-out-expo);
-}
-
-.promo-card:hover .promo-card__image img {
-  transform: scale(1.03);
 }
 
 .promo-card__badge {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 0.75rem;
+  left: 0.75rem;
   background: var(--yellow-safety);
   color: var(--charcoal);
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 0.35rem 0.75rem;
+  letter-spacing: 0.06em;
+  padding: 0.3rem 0.65rem;
   border-radius: 999px;
   z-index: 1;
 }
 
 .promo-card__body {
-  padding: 1.5rem;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  flex: 1;
+  min-height: 0;
+}
+
+.promo-card__head {
+  margin-bottom: 0.875rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(24, 28, 32, 0.08);
+}
+
+.promo-card__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  line-height: 1.3;
+  color: var(--charcoal);
+  margin: 0;
+}
+
+.promo-card__meta {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--red-alert);
+  margin: 0.35rem 0 0;
+}
+
+.promo-card__desc {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--charcoal);
+  opacity: 0.72;
+  margin: 0.35rem 0 0;
+}
+
+.promo-card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.promo-card__row {
+  background: var(--gray-light);
+  border-radius: 0.5rem;
+  padding: 0.7rem 0.75rem;
+  border-left: 3px solid var(--red-alert);
+}
+
+.promo-card__row--green { border-left-color: #2ecc71; }
+.promo-card__row--blue { border-left-color: #3498db; }
+.promo-card__row--gold { border-left-color: #d4a017; }
+
+.promo-card__row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.promo-card__row-label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--charcoal);
+}
+
+.promo-card__row-price {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: var(--red-alert);
+  white-space: nowrap;
+}
+
+.promo-card__row-text {
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: var(--charcoal);
+  opacity: 0.75;
+  margin: 0 0 0.4rem;
+}
+
+.promo-card__row-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--red-alert);
+  text-decoration: none;
+}
+
+.promo-card__row-link:hover {
+  text-decoration: underline;
+}
+
+.promo-card__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.promo-card__list li {
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: var(--charcoal);
+  opacity: 0.85;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid rgba(24, 28, 32, 0.06);
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.promo-card__list li:last-child {
+  border-bottom: none;
+}
+
+.promo-card__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--red-alert);
+}
+
+.promo-card__foot {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(24, 28, 32, 0.08);
 }
 
 .promo-card__price {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: var(--red-alert);
   line-height: 1;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .promo-card__price small {
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--charcoal);
-  opacity: 0.6;
+  opacity: 0.55;
 }
 
-/* ─── Planos Bombeiro Civil ─── */
-.bc-plans-section {
-  margin-bottom: 4rem;
-}
-
-.bc-plans-banner {
-  border-radius: 1rem;
-  overflow: hidden;
-  margin-bottom: 2rem;
-  background: #000;
-}
-
-.bc-plans-banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  max-height: 320px;
-}
-
-.bc-matricula-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: var(--navy);
-  color: var(--yellow-safety);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  padding: 0.5rem 1.25rem;
-  border-radius: 999px;
-  margin-bottom: 1.5rem;
-}
-
-.bc-plan-card {
-  background: var(--white);
-  border-radius: 1rem;
-  border: 3px solid transparent;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.35s var(--ease-out-expo), box-shadow 0.35s var(--ease-out-expo);
-}
-
-.bc-plan-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(26, 44, 66, 0.14);
-}
-
-.bc-plan-card--basico { border-color: #2ecc71; }
-.bc-plan-card--intermediario { border-color: #3498db; }
-.bc-plan-card--avancado { border-color: #f1c40f; }
-
-.bc-plan-card__header {
-  padding: 1.5rem 1.25rem 1rem;
-  text-align: center;
-}
-
-.bc-plan-card__icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
+.promo-card__cta {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 0.75rem;
+  gap: 0.35rem;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--red-alert);
   color: var(--white);
-}
-
-.bc-plan-card--basico .bc-plan-card__icon { background: #2ecc71; }
-.bc-plan-card--intermediario .bc-plan-card__icon { background: #3498db; }
-.bc-plan-card--avancado .bc-plan-card__icon { background: #f1c40f; color: var(--charcoal); }
-
-.bc-plan-card__title {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-
-.bc-plan-card__list {
-  flex-grow: 1;
-  padding: 0 1.25rem;
-  margin: 0;
-  list-style: none;
-}
-
-.bc-plan-card__list li {
-  padding: 0.65rem 0;
-  text-align: center;
-  font-size: 0.8rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  border-bottom: 1px solid rgba(24, 28, 32, 0.08);
-  color: var(--charcoal);
+  font-size: 0.8125rem;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease;
 }
 
-.bc-plan-card__list li:last-child {
-  border-bottom: none;
+.promo-card__cta:hover {
+  background: var(--red-hover);
 }
 
-.bc-plan-card__price {
-  text-align: center;
-  padding: 1rem 1.25rem 0.5rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 2rem;
-  color: var(--charcoal);
+.promo-card__cta .material-symbols-outlined {
+  font-size: 1rem;
+  transition: transform 0.25s ease;
 }
 
-.bc-plan-card__footer {
-  padding: 0.75rem;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+.promo-card__cta:hover .material-symbols-outlined {
+  transform: translateX(3px);
+}
+
+.promo-card__cta--outline {
+  background: transparent;
+  color: var(--red-alert);
+  border: 2px solid var(--red-alert);
+}
+
+.promo-card__cta--outline:hover {
+  background: var(--red-alert);
   color: var(--white);
-}
-
-.bc-plan-card--basico .bc-plan-card__footer { background: #2ecc71; }
-.bc-plan-card--intermediario .bc-plan-card__footer { background: #3498db; }
-.bc-plan-card--avancado .bc-plan-card__footer { background: #f1c40f; color: var(--charcoal); }
-
-.bc-plan-card__cta {
-  padding: 0 1.25rem 1.25rem;
 }
 
 .preloader-bar {
@@ -752,6 +795,14 @@ a.group:hover .leal-logo-wrap,
   transition: opacity 1.1s var(--ease-out-expo), transform 1.1s var(--ease-out-expo);
 }
 
+/* O container nunca fica invisível — só os filhos animam */
+.stagger-children,
+html.leal-anim .stagger-children.reveal,
+.stagger-children.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 .stagger-children.revealed > *:nth-child(1) { transition-delay: 0.08s; opacity: 1; transform: none; }
 .stagger-children.revealed > *:nth-child(2) { transition-delay: 0.22s; opacity: 1; transform: none; }
 .stagger-children.revealed > *:nth-child(3) { transition-delay: 0.36s; opacity: 1; transform: none; }
@@ -760,6 +811,7 @@ a.group:hover .leal-logo-wrap,
 .stagger-children.revealed > *:nth-child(6) { transition-delay: 0.78s; opacity: 1; transform: none; }
 .stagger-children.revealed > *:nth-child(7) { transition-delay: 0.92s; opacity: 1; transform: none; }
 .stagger-children.revealed > *:nth-child(8) { transition-delay: 1.06s; opacity: 1; transform: none; }
+.stagger-children.revealed > *:nth-child(n+9) { opacity: 1; transform: none; }
 
 /* ─── Trust Bar Marquee ─── */
 .trust-marquee {
@@ -813,20 +865,24 @@ a.group:hover .leal-logo-wrap,
 }
 
 .clients-grid {
-  align-items: stretch;
+  align-items: center;
+  justify-items: center;
 }
 
 .client-logo-card {
   background: var(--white);
   border: 1px solid rgba(24, 28, 32, 0.08);
-  border-radius: 0.75rem;
-  padding: 1rem 1.25rem;
-  min-height: 6.5rem;
+  border-radius: 50%;
+  width: 6.5rem;
+  height: 6.5rem;
+  padding: 0.35rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   box-shadow: 0 4px 18px rgba(26, 44, 66, 0.06);
   transition: transform 0.35s var(--ease-out-expo), box-shadow 0.35s ease;
+  flex-shrink: 0;
 }
 
 .client-logo-card:hover {
@@ -835,17 +891,17 @@ a.group:hover .leal-logo-wrap,
 }
 
 .client-logo-card img {
-  max-height: 4.5rem;
-  max-width: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .clients-marquee .client-logo-card {
   flex-shrink: 0;
-  width: 10.5rem;
-  min-height: 5.5rem;
+  width: 5.5rem;
+  height: 5.5rem;
 }
 
 .clients-marquee .clients-track {
@@ -870,12 +926,13 @@ a.group:hover .leal-logo-wrap,
 }
 
 .clients-partners-compact .client-logo-card {
-  min-height: 5rem;
-  padding: 0.75rem 1rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 0.25rem;
 }
 
 .clients-partners-compact .client-logo-card img {
-  max-height: 3.25rem;
+  border-radius: 50%;
 }
 
 /* ─── Course Cards ─── */
@@ -1466,18 +1523,79 @@ a.group:hover .leal-logo-wrap,
 .cta-banner {
   position: relative;
   overflow: hidden;
+  background: linear-gradient(128deg, #0c141c 0%, var(--navy) 42%, #1a3048 100%);
 }
 
 .cta-banner::before {
   content: '';
   position: absolute;
-  inset: -50%;
-  background: conic-gradient(from 0deg, transparent, rgba(230,57,70,0.1), transparent, rgba(241,196,15,0.1), transparent);
-  animation: ctaRotate 8s linear infinite;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 55% 80% at 100% 50%, rgba(183, 16, 42, 0.14) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 60% at 0% 100%, rgba(254, 208, 35, 0.07) 0%, transparent 55%),
+    repeating-linear-gradient(
+      -52deg,
+      transparent,
+      transparent 36px,
+      rgba(255, 255, 255, 0.018) 36px,
+      rgba(255, 255, 255, 0.018) 37px
+    );
+  pointer-events: none;
 }
 
-@keyframes ctaRotate {
-  to { transform: rotate(360deg); }
+.cta-banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--red-alert), var(--yellow-safety), var(--red-alert));
+  pointer-events: none;
+}
+
+.cta-banner__glow {
+  position: absolute;
+  width: min(28rem, 70vw);
+  height: min(28rem, 70vw);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(183, 16, 42, 0.12) 0%, transparent 68%);
+  top: 50%;
+  right: -6rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.cta-banner__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 72rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-banner__label {
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--yellow-safety);
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid rgba(254, 208, 35, 0.35);
+  border-radius: 999px;
+  background: rgba(254, 208, 35, 0.08);
+}
+
+.cta-banner,
+.cta-banner h2 {
+  color: var(--text-on-dark);
+}
+
+.cta-banner p {
+  color: var(--text-on-dark-muted);
 }
 
 /* ─── Footer ─── */

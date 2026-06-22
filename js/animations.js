@@ -13,6 +13,7 @@
 
     if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
       document.documentElement.classList.add('leal-no-motion');
+      revealAllStatic();
       return;
     }
 
@@ -79,6 +80,9 @@
   function initStaggers() {
     gsap.utils.toArray('.stagger-children').forEach((wrap) => {
       if (wrap.closest('.hero-section')) return;
+      gsap.set(wrap, { autoAlpha: 1, clearProps: 'transform' });
+      wrap.classList.add('revealed');
+
       const kids = gsap.utils.toArray(wrap.children);
       if (!kids.length) return;
 
