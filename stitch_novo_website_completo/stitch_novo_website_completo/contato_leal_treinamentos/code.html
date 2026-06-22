@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contato | Leal Treinamentos</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#eef1f6",
+                    "surface-variant": "#e0e3e8",
+                    "on-surface-variant": "#5b403f",
+                    "on-primary-fixed": "#410007",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#f7f9ff",
+                    "pure-white": "#FFFFFF",
+                    "primary-fixed-dim": "#ffb3b1",
+                    "inverse-surface": "#2d3135",
+                    "on-tertiary-fixed-variant": "#36485f",
+                    "on-primary-fixed-variant": "#92001c",
+                    "on-secondary-fixed": "#231b00",
+                    "tertiary-fixed-dim": "#b6c8e4",
+                    "on-secondary": "#ffffff",
+                    "primary": "#b7102a",
+                    "primary-container": "#db313f",
+                    "surface-container-highest": "#e0e3e8",
+                    "secondary-container": "#fed023",
+                    "inverse-primary": "#ffb3b1",
+                    "surface-container": "#ebeef3",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffe084",
+                    "on-tertiary-container": "#fdfcff",
+                    "on-secondary-container": "#6f5900",
+                    "background": "#f7f9ff",
+                    "secondary": "#735c00",
+                    "on-background": "#181c20",
+                    "surface-tint": "#bb152c",
+                    "tertiary-fixed": "#d3e4ff",
+                    "secondary-fixed-dim": "#eec209",
+                    "surface": "#f7f9ff",
+                    "on-tertiary-fixed": "#091c32",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#e4bebc",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#181c20",
+                    "navy-authority": "#1A2C42",
+                    "surface-container-high": "#e5e8ee",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#d7dadf",
+                    "primary-fixed": "#ffdad8",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#64768f",
+                    "on-secondary-fixed-variant": "#574500",
+                    "tertiary": "#4c5d75",
+                    "on-primary-container": "#fffbff",
+                    "surface-light": "#F8F9FA",
+                    "outline": "#8f6f6e",
+                    "surface-container-low": "#f1f4f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "20px",
+                    "section-gap-lg": "120px",
+                    "stack-sm": "8px",
+                    "margin-mobile": "20px",
+                    "stack-md": "16px",
+                    "section-gap-md": "80px",
+                    "margin-desktop": "80px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Montserrat"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "display-hero": ["Montserrat"],
+                    "display-hero-mobile": ["Montserrat"],
+                    "body-lg": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "body-md": ["Inter"],
+                    "caption": ["Inter"],
+                    "headline-lg": ["Montserrat"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "display-hero": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "display-hero-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-md": ["16px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-pure-white font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-surface/85 backdrop-blur-md dark:bg-navy-authority/85 shadow-sm sticky top-0 z-50 border-b border-outline-variant/30">
+<nav class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-on-background dark:text-surface-bright transition-transform hover:scale-102">
+                Leal Treinamentos
+            </div>
+<div class="hidden md:flex items-center gap-stack-md">
+<a class="font-label-md text-label-md text-on-background/80 dark:text-surface-variant hover:text-primary transition-all duration-300" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-background/80 dark:text-surface-variant hover:text-primary transition-all duration-300" href="#">Cursos</a>
+<a class="font-label-md text-label-md text-on-background/80 dark:text-surface-variant hover:text-primary transition-all duration-300" href="#">Soluções B2B</a>
+<a class="font-label-md text-label-md text-on-background/80 dark:text-surface-variant hover:text-primary transition-all duration-300" href="#">Sobre Nós</a>
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 transition-all duration-300" href="#">Contato</a>
+</div>
+<button class="bg-primary text-pure-white px-6 py-2 rounded-lg font-label-md text-label-md hover:scale-105 transition-transform duration-300">
+                Solicitar Orçamento
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative bg-navy-authority py-24 overflow-hidden">
+<div class="absolute inset-0 opacity-20">
+
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-desktop text-center">
+<h1 class="font-headline-lg text-headline-lg text-pure-white mb-stack-md">Entre em Contato</h1>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-2xl mx-auto">
+                    Nossa equipe de especialistas está pronta para elevar o padrão de segurança e excelência técnica da sua empresa.
+                </p>
+</div>
+</section>
+<!-- Contact Content Section -->
+<section class="py-section-gap-md max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left: Contact Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-sm border border-outline-variant/20">
+<h2 class="font-headline-md text-headline-md text-on-background mb-stack-md">Envie uma Mensagem</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Preencha o formulário abaixo e retornaremos em até 24 horas úteis.
+                    </p>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant" for="name">Nome Completo</label>
+<input class="w-full px-4 py-3 rounded border border-outline-variant focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-navy-authority transition-all bg-surface-bright" id="name" name="name" placeholder="Seu nome" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant" for="email">E-mail Corporativo</label>
+<input class="w-full px-4 py-3 rounded border border-outline-variant focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-navy-authority transition-all bg-surface-bright" id="email" name="email" placeholder="email@empresa.com.br" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant" for="whatsapp">WhatsApp</label>
+<input class="w-full px-4 py-3 rounded border border-outline-variant focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-navy-authority transition-all bg-surface-bright" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" type="tel"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant" for="subject">Assunto</label>
+<select class="w-full px-4 py-3 rounded border border-outline-variant focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-navy-authority transition-all bg-surface-bright" id="subject" name="subject">
+<option value="">Selecione um assunto</option>
+<option value="orcamento">Orçamento para Empresas</option>
+<option value="curso">Inscrição em Cursos</option>
+<option value="b2b">Soluções B2B</option>
+<option value="suporte">Suporte Técnico</option>
+<option value="outros">Outros</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant" for="message">Sua Mensagem</label>
+<textarea class="w-full px-4 py-3 rounded border border-outline-variant focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-navy-authority transition-all bg-surface-bright resize-none" id="message" name="message" placeholder="Como podemos ajudar sua organização hoje?" rows="5"></textarea>
+</div>
+<button class="w-full bg-primary text-pure-white py-4 rounded-lg font-headline-md text-label-md font-bold hover:scale-[1.01] active:scale-95 transition-all duration-300 shadow-md" type="submit">
+                            Enviar Solicitação
+                        </button>
+</form>
+</div>
+<!-- Right: Direct Contacts & Map -->
+<div class="lg:col-span-5 space-y-10">
+<!-- Info Cards -->
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="bg-secondary-container text-on-secondary-container p-3 rounded-lg">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-on-background">Telefone e WhatsApp</h3>
+<p class="text-on-surface-variant">+55 (11) 4003-0000</p>
+<p class="text-on-surface-variant">+55 (11) 98888-7777</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-secondary-container text-on-secondary-container p-3 rounded-lg">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-on-background">E-mail</h3>
+<p class="text-on-surface-variant">contato@lealtreinamentos.com.br</p>
+<p class="text-on-surface-variant">vendas@lealtreinamentos.com.br</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-secondary-container text-on-secondary-container p-3 rounded-lg">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-on-background">Endereço Físico</h3>
+<p class="text-on-surface-variant">Av. Paulista, 1000 - Bela Vista</p>
+<p class="text-on-surface-variant">São Paulo - SP, 01310-100</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-secondary-container text-on-secondary-container p-3 rounded-lg">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-on-background">Horário de Funcionamento</h3>
+<p class="text-on-surface-variant">Segunda a Sexta: 08:00 às 18:00</p>
+<p class="text-on-surface-variant">Sábado: 08:00 às 12:00</p>
+</div>
+</div>
+</div>
+<!-- Social Media -->
+<div>
+<h3 class="font-label-md text-label-md font-bold text-on-background mb-4">Siga-nos nas redes sociais</h3>
+<div class="flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-navy-authority text-pure-white hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined">link</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-navy-authority text-pure-white hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-navy-authority text-pure-white hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined">groups</span>
+</a>
+</div>
+</div>
+<!-- Map Embed Placeholder -->
+<div class="w-full aspect-video rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm group">
+<div class="w-full h-full bg-surface-container-high relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A clean, professional minimalist top-down map of a corporate district in São Paulo, featuring modern architectural icons, subtle grid lines, and a high-contrast navy and red brand color scheme. The lighting is bright and even, highlighting the technical and organized nature of the training center's location." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCbaqpHThP9hOTce2crrvhpbuECRh0pFmWxojdEoJkeb5DOPu-o9wO9MpSfNQ8mbZxNQvkXOBkTOc-SqbZ3F2p7GIk3oVtA08Rq32IEt1Y6Jc2Shquxpu_e0G1bB6y3l_oIaQ6x4IFcMiRckuf_RL30GJlX_Ji_t31iLpjYHdf2P9FxgEdFpRqQVKXf7CWRgBVumsMTlGIRUDUuuI2bCwrdBV4DgioV-bGLQxcliNPqRIg75PMuWR1-W5azFZD9JbHNDsVQJQNVJB9H')">
+<div class="absolute inset-0 bg-navy-authority/20 group-hover:bg-transparent transition-colors"></div>
+<div class="z-10 bg-pure-white p-4 rounded-lg shadow-xl border border-primary/20 flex flex-col items-center">
+<span class="material-symbols-outlined text-primary scale-150 mb-2" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-label-md text-caption text-navy-authority font-bold">Leal Treinamentos</span>
+</div>
+</div>
+<div class="hidden" data-location="São Paulo" style=""></div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-surface-container-high py-20 border-y border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-8">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-background">Prefere falar por WhatsApp?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Atendimento imediato para consultoria técnica e orçamentos rápidos.</p>
+</div>
+<a class="flex items-center gap-3 bg-[#25D366] text-pure-white px-8 py-4 rounded-full font-headline-md text-label-md font-bold hover:scale-105 transition-transform duration-300 shadow-lg" href="https://wa.me/5511988887777">
+<span class="material-symbols-outlined">chat</span>
+                    Iniciar Conversa no WhatsApp
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-navy-authority text-surface-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop py-section-gap-md grid grid-cols-1 md:grid-cols-4 gap-section-gap-md">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md text-pure-white mb-6">Leal Treinamentos</div>
+<p class="font-body-sm text-body-sm mb-6 opacity-80">Referência nacional em treinamentos de alta periculosidade e segurança do trabalho. Qualidade técnica e compromisso com a vida.</p>
+</div>
+<div>
+<h4 class="text-pure-white font-bold mb-6">Links Rápidos</h4>
+<ul class="space-y-4 font-body-sm">
+<li><a class="hover:text-pure-white transition-colors" href="#">Home</a></li>
+<li><a class="hover:text-pure-white transition-colors" href="#">Cursos</a></li>
+<li><a class="hover:text-pure-white transition-colors" href="#">Soluções B2B</a></li>
+<li><a class="hover:text-pure-white transition-colors" href="#">Sobre Nós</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-pure-white font-bold mb-6">Institucional</h4>
+<ul class="space-y-4 font-body-sm">
+<li><a class="hover:text-pure-white transition-colors" href="#">Privacidade</a></li>
+<li><a class="hover:text-pure-white transition-colors" href="#">Termos de Uso</a></li>
+<li><a class="hover:text-pure-white transition-colors" href="#">FAQ</a></li>
+<li><a class="hover:text-pure-white transition-colors" href="#">Trabalhe Conosco</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-pure-white font-bold mb-6">Newsletter</h4>
+<p class="font-body-sm mb-4">Receba atualizações sobre normas e novos cursos.</p>
+<div class="flex gap-2">
+<input class="bg-white/10 border border-white/20 rounded px-3 py-2 w-full text-pure-white focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Seu e-mail" type="email"/>
+<button class="bg-primary px-4 py-2 rounded text-pure-white hover:bg-primary-container transition-colors">OK</button>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop py-6 border-t border-white/10 text-center font-body-sm opacity-60">
+            © 2024 Leal Treinamentos. Todos os direitos reservados.
+        </div>
+</footer>
+<!-- FAB WhatsApp -->
+<a class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-pure-white w-14 h-14 flex items-center justify-center rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300" href="https://wa.me/5511988887777">
+<span class="material-symbols-outlined scale-125" style="font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+<script>
+        // Micro-interactions and effects
+        document.querySelectorAll('input, select, textarea').forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.querySelector('label')?.classList.add('text-primary');
+            });
+            input.addEventListener('blur', () => {
+                input.parentElement.querySelector('label')?.classList.remove('text-primary');
+            });
+        });
+
+        // Form submission animation mock
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span class="material-symbols-outlined animate-spin">sync</span> Enviando...';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> Mensagem Enviada!';
+                btn.classList.replace('bg-primary', 'bg-green-600');
+                e.target.reset();
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.replace('bg-green-600', 'bg-primary');
+                    btn.disabled = false;
+                }, 3000);
+            }, 1500);
+        });
+    </script>
+</body></html>

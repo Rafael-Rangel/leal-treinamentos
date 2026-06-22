@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leal Treinamentos | Excelência em Capacitação e Segurança do Trabalho</title>
+  <meta name="description" content="Centro de treinamentos premium em segurança do trabalho, formação de bombeiros civis e NRs. Cursos presenciais e in-company no Rio de Janeiro e todo Brasil.">
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="js/fonts-loader.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="js/tailwind-config.js"></script>
+  <script src="js/images.js"></script>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-logo">
+      <svg class="preloader-shield" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 2.18l7 3.11v5.71c0 4.54-3.07 8.86-7 9.93-3.93-1.07-7-5.39-7-9.93V6.29l7-3.11zM11 7v6h2V7h-2zm0 8v2h2v-2h-2z"/>
+      </svg>
+      <span class="preloader-text">LEAL</span>
+    </div>
+    <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+  </div>
+
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="glass-header hero-mode fixed top-0 w-full z-50 px-6 lg:px-20 py-5 transition-all" id="main-header">
+    <div class="max-w-content mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <svg class="w-10 h-10 fill-red-alert transition-transform group-hover:scale-110" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+        </svg>
+        <div>
+          <span class="logo-text font-display text-xl block leading-tight tracking-wider">LEAL</span>
+          <span class="logo-sub text-xs tracking-widest uppercase">Treinamentos</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-10">
+        <a class="nav-link active text-sm" href="index.html">Início</a>
+        <a class="nav-link text-sm" href="cursos.html">Cursos</a>
+        <a class="nav-link text-sm" href="corporativo.html">Corporativo</a>
+        <a class="nav-link text-sm" href="sobre.html">Sobre Nós</a>
+        <a class="nav-link text-sm" href="contato.html">Contato</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a class="hidden sm:inline-flex btn-primary px-6 py-3 text-sm" href="contato.html">Solicitar Orçamento</a>
+        <button class="hamburger lg:hidden" id="hamburger" aria-label="Abrir menu" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="index.html">Início</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="corporativo.html">Corporativo</a>
+    <a href="sobre.html">Sobre Nós</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-section" id="inicio">
+    <div class="hero-bg">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8UIDuSnYti18FPvraSOSe4JUKw31oBtL0JOlOUJsiEk0qQkMnlKdZfX1Jw8QHbBF8kV39XlQv6VzQFhUvsC_A1guo9icp9TOYeNvZluwjU5Z5xszKSXqXAshHUAPQ7SsI2JFxoOd1LtaQZ4ePS1EHUf4joabF9zMjwrltjuMdx8dyilE6hGM9-Q3BgeAga4ICuYAgozT2_8OnFGqhDokFg6U-jbhqRSstV1sAV1tPMJfTeh85TofQVp9YbMGdz02BjxAYIgWkjMaL" alt="Instrutor de bombeiro civil conduzindo treinamento de combate a incêndio em centro industrial" loading="eager">
+    </div>
+    <div class="hero-overlay hero-gradient"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-particles" aria-hidden="true"></div>
+
+    <div class="relative z-10 max-w-content mx-auto px-6 lg:px-20 w-full pt-28 pb-16">
+      <div class="max-w-3xl">
+        <div class="hero-badge mb-8 hero-animate hero-animate-delay-1">
+          <span class="hero-badge-dot"></span>
+          <span class="text-on-dark text-sm font-medium uppercase tracking-wider">Referência em Segurança do Trabalho — RJ</span>
+        </div>
+
+        <h1 class="font-display font-normal text-white text-4xl md:text-5xl lg:text-[4.5rem] leading-none mb-6 uppercase hero-animate hero-animate-delay-2">
+          Capacitação que Protege Vidas
+        </h1>
+
+        <p class="text-on-dark text-lg md:text-xl leading-relaxed mb-4 max-w-2xl hero-animate hero-animate-delay-3">
+          Leal Treinamentos — levando inovação e conhecimento para quem opera em ambientes de risco real.
+        </p>
+        <p class="text-on-dark-muted text-base leading-relaxed mb-10 max-w-2xl hero-animate hero-animate-delay-3">
+          Bombeiro civil, NRs, brigada de incêndio e soluções corporativas in-company. Certificação válida em todo o Brasil.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 hero-animate hero-animate-delay-4">
+          <a class="btn-primary inline-flex items-center justify-center gap-2 px-8 py-4 text-base" href="#cursos">
+            Ver Todos os Cursos
+            <span class="material-symbols-outlined text-xl">arrow_forward</span>
+          </a>
+          <a class="btn-outline-white inline-flex items-center justify-center gap-2 px-8 py-4 text-base" href="#corporativo">
+            Soluções para Empresas
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10" aria-hidden="true">
+      <span class="material-symbols-outlined text-white text-4xl scroll-indicator">expand_more</span>
+    </div>
+  </section>
+
+  <!-- Clientes & Parceiros -->
+  <section class="clients-partners section-pad border-b border-outline-variant/30" aria-labelledby="clientes-parceiros-title">
+    <div class="max-w-content mx-auto px-6 lg:px-20">
+      <h2 class="clients-partners-title reveal" id="clientes-parceiros-title">Nossos clientes são nossos parceiros:</h2>
+
+      <div class="clients-grid hidden md:grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 stagger-children reveal">
+        <div class="client-logo-card"><img src="assets/clientes/cliente-01.jpg" alt="Cliente parceiro Leal Treinamentos" loading="lazy"></div>
+        <div class="client-logo-card"><img src="assets/clientes/cliente-02.jpg" alt="Cliente parceiro Leal Treinamentos" loading="lazy"></div>
+        <div class="client-logo-card"><img src="assets/clientes/cliente-03.jpg" alt="Cliente parceiro Leal Treinamentos" loading="lazy"></div>
+        <div class="client-logo-card"><img src="assets/clientes/cliente-04.jpg" alt="Cliente parceiro Leal Treinamentos" loading="lazy"></div>
+        <div class="client-logo-card"><img src="assets/clientes/cliente-05.jpg" alt="Cliente parceiro Leal Treinamentos" loading="lazy"></div>
+        <div class="client-logo-card"><img src="assets/clientes/cliente-06.jpg" alt="Cliente parceiro Leal Treinamentos" loading="lazy"></div>
+        <div class="client-logo-card"><img src="assets/clientes/cliente-07.jpg" alt="Cliente parceiro Leal Treinamentos" loading="lazy"></div>
+        <div class="client-logo-card"><img src="assets/clientes/cliente-08.jpg" alt="Cliente parceiro Leal Treinamentos" loading="lazy"></div>
+      </div>
+
+      <div class="clients-marquee trust-marquee md:hidden reveal">
+        <div class="clients-track">
+          <div class="client-logo-card"><img src="assets/clientes/cliente-01.jpg" alt="" loading="lazy"></div>
+          <div class="client-logo-card"><img src="assets/clientes/cliente-02.jpg" alt="" loading="lazy"></div>
+          <div class="client-logo-card"><img src="assets/clientes/cliente-03.jpg" alt="" loading="lazy"></div>
+          <div class="client-logo-card"><img src="assets/clientes/cliente-04.jpg" alt="" loading="lazy"></div>
+          <div class="client-logo-card"><img src="assets/clientes/cliente-05.jpg" alt="" loading="lazy"></div>
+          <div class="client-logo-card"><img src="assets/clientes/cliente-06.jpg" alt="" loading="lazy"></div>
+          <div class="client-logo-card"><img src="assets/clientes/cliente-07.jpg" alt="" loading="lazy"></div>
+          <div class="client-logo-card"><img src="assets/clientes/cliente-08.jpg" alt="" loading="lazy"></div>
+          <div class="client-logo-card" aria-hidden="true"><img src="assets/clientes/cliente-01.jpg" alt="" loading="lazy"></div>
+          <div class="client-logo-card" aria-hidden="true"><img src="assets/clientes/cliente-02.jpg" alt="" loading="lazy"></div>
+          <div class="client-logo-card" aria-hidden="true"><img src="assets/clientes/cliente-03.jpg" alt="" loading="lazy"></div>
+          <div class="client-logo-card" aria-hidden="true"><img src="assets/clientes/cliente-04.jpg" alt="" loading="lazy"></div>
+          <div class="client-logo-card" aria-hidden="true"><img src="assets/clientes/cliente-05.jpg" alt="" loading="lazy"></div>
+          <div class="client-logo-card" aria-hidden="true"><img src="assets/clientes/cliente-06.jpg" alt="" loading="lazy"></div>
+          <div class="client-logo-card" aria-hidden="true"><img src="assets/clientes/cliente-07.jpg" alt="" loading="lazy"></div>
+          <div class="client-logo-card" aria-hidden="true"><img src="assets/clientes/cliente-08.jpg" alt="" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="bg-navy py-12">
+    <div class="max-w-content mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 stagger-children reveal">
+      <div class="stat-card">
+        <div class="stat-number" data-count="15000" data-suffix="+">0</div>
+        <p class="text-on-dark-muted text-sm mt-2">Alunos Formados</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-count="25" data-suffix="+">0</div>
+        <p class="text-on-dark-muted text-sm mt-2">Anos de Experiência</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-count="40" data-suffix="+">0</div>
+        <p class="text-on-dark-muted text-sm mt-2">Cursos Disponíveis</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-count="98" data-suffix="%">0</div>
+        <p class="text-on-dark-muted text-sm mt-2">Satisfação dos Alunos</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cursos -->
+  <section class="section-pad bg-white" id="cursos">
+    <div class="max-w-content mx-auto px-6">
+      <div class="text-center mb-10 reveal">
+        <span class="section-label">Nossa Oferta</span>
+        <h2 class="section-title">Treinamentos Especializados</h2>
+        <div class="section-divider"></div>
+        <p class="mt-6 text-on-light-muted max-w-2xl mx-auto">Certificações reconhecidas, metodologia prática e instrutores com experiência de campo.</p>
+      </div>
+
+      <!-- Filtros (Stitch) -->
+      <div class="flex flex-wrap justify-center gap-3 mb-12 reveal" id="course-filters" role="tablist">
+        <button class="filter-chip active" data-filter="all" type="button">Todos</button>
+        <button class="filter-chip" data-filter="formacao" type="button">Formação</button>
+        <button class="filter-chip" data-filter="nr" type="button">NRs</button>
+        <button class="filter-chip" data-filter="saude" type="button">Saúde</button>
+        <button class="filter-chip" data-filter="seguranca" type="button">Segurança</button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-children reveal" id="course-grid">
+        <!-- Card 1 -->
+        <article class="course-card border border-outline-variant/30" data-tilt data-category="formacao">
+          <div class="course-card-image">
+            <span class="course-tag bg-yellow-safety text-charcoal">ALTA DEMANDA</span>
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAloslstDOQTit-9-9GpUfFZUBA1PlUR2l4NAK8hXNTF_K5oo_nTavVB-nIebT7lotnLDDkkDjL7o7cS9puNV7dWaCwMmB0VuZtPNJzwhZyVP4QHwDNpUtyQLqp5PdQtUC1hy81754JBYtX3I4XEB6uHvWofNdlpLswn67xvDu5W6aazDz51Tk0HDsTX4LTTHOV8JuQTZM7LluUDNGrDg_gqrPZcORULv4Cg7n8L-QbZ9kYyI84l12l5jSMdrNh2FA-o1F515rweDdo" alt="Bombeiro civil em treinamento de combate a incêndio controlado" loading="lazy">
+          </div>
+          <div class="p-6 md:p-8 flex flex-col flex-grow">
+            <div class="flex items-center gap-2 text-red-alert mb-3">
+              <span class="material-symbols-outlined text-sm">verified</span>
+              <span class="text-xs uppercase tracking-tighter font-semibold">Certificação Profissional</span>
+            </div>
+            <h3 class="font-montserrat font-bold text-xl mb-3">Formação de Bombeiro Civil</h3>
+            <p class="text-on-light-muted text-sm mb-5 leading-relaxed flex-grow">Treinamento intensivo em combate a incêndio, resgate técnico e atendimento pré-hospitalar conforme normas vigentes.</p>
+            <div class="flex items-center justify-between pt-6 border-t border-outline-variant/20 mt-auto">
+              <span class="text-sm font-medium text-navy">Carga horária: 210h</span>
+              <a class="text-red-alert font-bold text-sm nav-link inline-block" href="#contato">Detalhes</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="course-card border border-outline-variant/30" data-tilt data-category="nr">
+          <div class="course-card-image">
+            <span class="course-tag" style="background:var(--navy)">NR 35</span>
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtzQgBfrjzaW6kf16GP2v7OLezLcnO_eO82-FupAr7oICI57dRtYpp2ovVvfsAMQF2nZD7ecEY1CB9kzgZXTn4z48kUigmPOkyiw8DO3quLVMLVCo8jzVe0HqYYimxQC1MaHspFVnX9gxeRYRRUxc6i-BovZZZGMlVPwpIHNQYaNA2jnRQbjY-tkM38IHubpVEBsE7Rk1fiUcjVk8NXGlx8ep5VlDzQN4dU6mIrRXJ6YN5MfyuyKYAOsJTZaH0OifuC36bIHncUqnL" alt="Profissionais em treinamento NR 35 trabalho em altura com EPIs" loading="lazy">
+          </div>
+          <div class="p-6 md:p-8 flex flex-col flex-grow">
+            <div class="flex items-center gap-2 text-red-alert mb-3">
+              <span class="material-symbols-outlined text-sm">engineering</span>
+              <span class="text-xs uppercase tracking-tighter font-semibold">Norma Regulamentadora</span>
+            </div>
+            <h3 class="font-montserrat font-bold text-xl mb-3">NR 35 — Trabalho em Altura</h3>
+            <p class="text-on-light-muted text-sm mb-5 leading-relaxed flex-grow">Capacitação teórica e prática para atividades acima de 2 metros, com foco em prevenção de quedas e sistemas de retenção.</p>
+            <div class="flex items-center justify-between pt-6 border-t border-outline-variant/20 mt-auto">
+              <span class="text-sm font-medium text-navy">Carga horária: 8h a 40h</span>
+              <a class="text-red-alert font-bold text-sm nav-link inline-block" href="#contato">Detalhes</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="course-card border border-outline-variant/30" data-tilt data-category="saude">
+          <div class="course-card-image">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPQfqHhds-pi6VHK2lFPni1-4j6qGzMuujzonm4hI8MYNd6j-I8gabUogh95ibNyVZlYqWt_tnCEk-b-31sJNTySyesmDXYCB-fenMIFhEGqXgopgPetRHZUpYNdisZcWgF8erUP7eEiRExaJyMdQZsNjtIuWXOj1hwTR7EcciEul2kSYvEJ4uuR_myLg4B23xZrIN9OUjTCOgo9QO5oPeGgwhJjlo63oTzfM7KxSdkcdmuyRqNt7SqUz5D8LeN-5JwyctHZeKFmCT" alt="Instrutor demonstrando RCP em manequim de treinamento" loading="lazy">
+          </div>
+          <div class="p-6 md:p-8 flex flex-col flex-grow">
+            <div class="flex items-center gap-2 text-red-alert mb-3">
+              <span class="material-symbols-outlined text-sm">medical_services</span>
+              <span class="text-xs uppercase tracking-tighter font-semibold">Primeiros Socorros</span>
+            </div>
+            <h3 class="font-montserrat font-bold text-xl mb-3">Curso de Socorrista</h3>
+            <p class="text-on-light-muted text-sm mb-5 leading-relaxed flex-grow">Protocolos de suporte básico de vida, RCP e manejo de emergências médicas no ambiente laboral com equipamentos de ponta.</p>
+            <div class="flex items-center justify-between pt-6 border-t border-outline-variant/20 mt-auto">
+              <span class="text-sm font-medium text-navy">Carga horária: 8h a 16h</span>
+              <a class="text-red-alert font-bold text-sm nav-link inline-block" href="#contato">Detalhes</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="course-card border border-outline-variant/30" data-tilt data-category="nr">
+          <div class="course-card-image">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0pXjztnIsuo_I9CDH13935W9x6_Z1b4IK3QBR7RwKzIBO09Xn0Dg2VqIs9i36mHn5eE_g8QTCMgwnMzIFmGvDTmgsNfw_uPKu0CfxDISzWSFHW0eg2hQ1_Ev1V_HRR5No-qSQAUw6Kz82VY10q3lvidszM8d4ZkwYDNAXVJ8nwogef9LYEBqOhmN1KMO3_0PSdJHU09amALviFbvm3bQZvemVQ7slNCugIsuyqH4XQVSnyzLbrNfuVq1q4UBrlvOp1OFojp4R6JuZ" alt="Técnico com EPI preparando entrada em espaço confinado NR 33" loading="lazy">
+          </div>
+          <div class="p-6 md:p-8 flex flex-col flex-grow">
+            <div class="flex items-center gap-2 text-red-alert mb-3">
+              <span class="material-symbols-outlined text-sm">engineering</span>
+              <span class="text-xs uppercase tracking-tighter font-semibold">NR 33</span>
+            </div>
+            <h3 class="font-montserrat font-bold text-xl mb-3">NR 33 — Espaço Confinado</h3>
+            <p class="text-on-light-muted text-sm mb-5 leading-relaxed flex-grow">Formação para entrada, trabalho e resgate em espaços confinados com simulador e equipamentos certificados.</p>
+            <div class="flex items-center justify-between pt-6 border-t border-outline-variant/20 mt-auto">
+              <span class="text-sm font-medium text-navy">Carga horária: 16h a 40h</span>
+              <a class="text-red-alert font-bold text-sm nav-link inline-block" href="#contato">Detalhes</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="course-card border border-outline-variant/30" data-tilt data-category="seguranca">
+          <div class="course-card-image">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuANSchLpJr3mTTLuU2rfA_Rz8CeOpvnT1YCFfKrq3XeBwL9SwjyZagKnCigvgOFEnPzBhii_zE-yWe7hUgD0O4ToE6Z_hVLW1rhYeX2kb48l5xlRmXaKfLK6Ai_WOTejlcGaB7IzOWgNi7KlgUyIqC-miiUXuaPW64D42oT3Q6eUs7Hx-O6sQVdRxOdN1b1sRaQrGWPyeP9vp5U5ggEWqLzLtXq3rtgBI0YylCT_TXR3Uh5dwZeMvlQqmYh8f9tUV_iNgFOgzy8AtUN" alt="Brigada de incêndio em exercício prático de combate a chamas" loading="lazy">
+          </div>
+          <div class="p-6 md:p-8 flex flex-col flex-grow">
+            <div class="flex items-center gap-2 text-red-alert mb-3">
+              <span class="material-symbols-outlined text-sm">local_fire_department</span>
+              <span class="text-xs uppercase tracking-tighter font-semibold">Brigada</span>
+            </div>
+            <h3 class="font-montserrat font-bold text-xl mb-3">Brigada de Incêndio</h3>
+            <p class="text-on-light-muted text-sm mb-5 leading-relaxed flex-grow">Formação e reciclagem de brigadistas conforme NR 23, com exercícios práticos de combate a incêndio in-company.</p>
+            <div class="flex items-center justify-between pt-6 border-t border-outline-variant/20 mt-auto">
+              <span class="text-sm font-medium text-navy">Carga horária: 20h a 24h</span>
+              <a class="text-red-alert font-bold text-sm nav-link inline-block" href="#contato">Detalhes</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="course-card border border-outline-variant/30" data-tilt data-category="nr">
+          <div class="course-card-image">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfqEybN0WiAN9tH9Np7Ts0EhLO22pVGXiiPYavi7t5Q7lYFk8yY9LcLD_yMAnH6TdUTZd5bbXl3twiOH0ztKrwlrr2Hfo9_L2LTjZJAYZKSXtcBNEMJh0UTLVqSFK8MJdxo4yj4mh19jPI5PZ-FMVTk_x4UzObLqg40egpmtGiDtLOniWARRmAO6xps34R4NrOokZn60FoVtkHa0dntcfYdcMihIRrY2zytuBz6ChDqHElrN8P7r2cIQ1dAVG_f2-Zle8LcYEfffyN" alt="Eletricista com EPI em painel industrial NR 10" loading="lazy">
+          </div>
+          <div class="p-6 md:p-8 flex flex-col flex-grow">
+            <div class="flex items-center gap-2 text-red-alert mb-3">
+              <span class="material-symbols-outlined text-sm">bolt</span>
+              <span class="text-xs uppercase tracking-tighter font-semibold">NR 10</span>
+            </div>
+            <h3 class="font-montserrat font-bold text-xl mb-3">NR 10 — Instalações Elétricas</h3>
+            <p class="text-on-light-muted text-sm mb-5 leading-relaxed flex-grow">Segurança em instalações e serviços com eletricidade — básico e SEP conforme norma vigente.</p>
+            <div class="flex items-center justify-between pt-6 border-t border-outline-variant/20 mt-auto">
+              <span class="text-sm font-medium text-navy">Carga horária: 40h</span>
+              <a class="text-red-alert font-bold text-sm nav-link inline-block" href="#contato">Detalhes</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7 - Bombeiro Mirim (site atual) -->
+        <article class="course-card border border-outline-variant/30" data-tilt data-category="formacao">
+          <div class="course-card-image">
+            <span class="course-tag bg-yellow-safety text-charcoal">JOVEM APRENDIZ</span>
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAloslstDOQTit-9-9GpUfFZUBA1PlUR2l4NAK8hXNTF_K5oo_nTavVB-nIebT7lotnLDDkkDjL7o7cS9puNV7dWaCwMmB0VuZtPNJzwhZyVP4QHwDNpUtyQLqp5PdQtUC1hy81754JBYtX3I4XEB6uHvWofNdlpLswn67xvDu5W6aazDz51Tk0HDsTX4LTTHOV8JuQTZM7LluUDNGrDg_gqrPZcORULv4Cg7n8L-QbZ9kYyI84l12l5jSMdrNh2FA-o1F515rweDdo" alt="Formação de bombeiro mirim civil" loading="lazy">
+          </div>
+          <div class="p-6 md:p-8 flex flex-col flex-grow">
+            <div class="flex items-center gap-2 text-red-alert mb-3">
+              <span class="material-symbols-outlined text-sm">school</span>
+              <span class="text-xs uppercase tracking-tighter font-semibold">Formação Jovem</span>
+            </div>
+            <h3 class="font-montserrat font-bold text-xl mb-3">Bombeiro Mirim Civil</h3>
+            <p class="text-on-light-muted text-sm mb-5 leading-relaxed flex-grow">Programa formativo para jovens com introdução à cultura de segurança, prevenção e primeiros socorros.</p>
+            <div class="flex items-center justify-between pt-6 border-t border-outline-variant/20 mt-auto">
+              <span class="text-sm font-medium text-navy">Consulte turmas</span>
+              <a class="text-red-alert font-bold text-sm nav-link inline-block" href="#contato">Detalhes</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8 - Eletricista (site atual) -->
+        <article class="course-card border border-outline-variant/30" data-tilt data-category="seguranca">
+          <div class="course-card-image">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfqEybN0WiAN9tH9Np7Ts0EhLO22pVGXiiPYavi7t5Q7lYFk8yY9LcLD_yMAnH6TdUTZd5bbXl3twiOH0ztKrwlrr2Hfo9_L2LTjZJAYZKSXtcBNEMJh0UTLVqSFK8MJdxo4yj4mh19jPI5PZ-FMVTk_x4UzObLqg40egpmtGiDtLOniWARRmAO6xps34R4NrOokZn60FoVtkHa0dntcfYdcMihIRrY2zytuBz6ChDqHElrN8P7r2cIQ1dAVG_f2-Zle8LcYEfffyN" alt="Curso de eletricista residencial e predial" loading="lazy">
+          </div>
+          <div class="p-6 md:p-8 flex flex-col flex-grow">
+            <div class="flex items-center gap-2 text-red-alert mb-3">
+              <span class="material-symbols-outlined text-sm">electrical_services</span>
+              <span class="text-xs uppercase tracking-tighter font-semibold">Qualificação</span>
+            </div>
+            <h3 class="font-montserrat font-bold text-xl mb-3">Eletricista Residencial e Predial</h3>
+            <p class="text-on-light-muted text-sm mb-5 leading-relaxed flex-grow">Formação prática em instalações elétricas residenciais e prediais com ênfase em segurança e normas técnicas.</p>
+            <div class="flex items-center justify-between pt-6 border-t border-outline-variant/20 mt-auto">
+              <span class="text-sm font-medium text-navy">Consulte carga horária</span>
+              <a class="text-red-alert font-bold text-sm nav-link inline-block" href="#contato">Detalhes</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-12 reveal">
+        <a class="btn-primary inline-flex items-center gap-2 px-10 py-4" href="cursos.html">
+          Explorar Catálogo Completo
+          <span class="material-symbols-outlined">trending_flat</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Por que Escolher (Split Screen — Stitch) -->
+  <section class="section-pad bg-navy text-white" id="diferenciais">
+    <div class="max-w-[1440px] mx-auto flex flex-col lg:flex-row min-h-[560px]">
+      <div class="lg:w-1/2 relative h-[360px] lg:h-auto image-reveal-wrap reveal-left">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnELWXcv1LZBAlf1Dvyx5xnu7EQKY36kCI0SbKEuTa7ma48QboFpnUGhmWk6kKbuGCi8hULlvSMteH3srlC7Cebl3FwZ_HnriA9mkkhbT1Z8UIxSBDdQrIopyJhT0DEIwU7lQl7EPMzvdwEfVNQPJWFK1x61-KuUH0xaX2TeHcTjzoaIfbC4gI-eXpLuaUKBcj2JUAlJk14aTtPDGURjWeLXwjF4DgGUNfvvRlYe5f_jGbNyiziFIoz3sGGHJLwVll54WB97e5WqEJ" alt="Infraestrutura moderna do centro de treinamentos Leal" class="w-full h-full object-cover" loading="lazy">
+        <div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+      </div>
+      <div class="lg:w-1/2 px-6 lg:px-20 py-16 lg:py-24 flex flex-col justify-center reveal-right">
+        <span class="section-label text-yellow-safety">Diferenciais</span>
+        <h2 class="font-display text-3xl md:text-5xl leading-none mb-10 uppercase text-on-dark">Por que escolher a Leal?</h2>
+        <p class="text-on-dark-muted mb-10 leading-relaxed">Sucesso é questão de decisão. Há mais de 25 anos formando profissionais com consciência e competência técnica no Rio de Janeiro.</p>
+        <div class="space-y-8">
+          <div class="flex gap-5">
+            <div class="w-12 h-12 shrink-0 bg-primary rounded-lg flex items-center justify-center">
+              <span class="material-symbols-outlined text-white">account_balance</span>
+            </div>
+            <div>
+              <h4 class="font-montserrat font-bold text-lg mb-2">Autoridade Inquestionável</h4>
+              <p class="text-on-dark-muted text-sm">Referência técnica para indústrias e empresas, com os mais altos padrões de conformidade e certificação.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <div class="w-12 h-12 shrink-0 bg-primary rounded-lg flex items-center justify-center">
+              <span class="material-symbols-outlined text-white">domain</span>
+            </div>
+            <div>
+              <h4 class="font-montserrat font-bold text-lg mb-2">Infraestrutura Robusta</h4>
+              <p class="text-on-dark-muted text-sm">Simuladores reais, torre de altura, espaço confinado e salas equipadas para vivência prática controlada.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <div class="w-12 h-12 shrink-0 bg-primary rounded-lg flex items-center justify-center">
+              <span class="material-symbols-outlined text-white">groups</span>
+            </div>
+            <div>
+              <h4 class="font-montserrat font-bold text-lg mb-2">Instrutores Especialistas</h4>
+              <p class="text-on-dark-muted text-sm">Engenheiros de segurança e profissionais de resgate com vasta experiência de campo real.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="section-pad bg-white" id="depoimentos">
+    <div class="max-w-content mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <span class="section-label">Prova Social</span>
+        <h2 class="section-title">Vozes da Indústria</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="testimonial-carousel reveal">
+        <div class="flex items-center gap-4">
+          <button class="carousel-btn hidden md:flex flex-shrink-0" id="carousel-prev" aria-label="Anterior">
+            <span class="material-symbols-outlined">chevron_left</span>
+          </button>
+
+          <div class="overflow-hidden flex-1">
+            <div class="testimonial-track">
+              <div class="testimonial-slide">
+                <div class="testimonial-card">
+                  <div class="flex items-center gap-4 mb-5">
+                    <img class="testimonial-avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNX98aemcl8Fcl_qcqJc3G-eGGlZ6unB3ONgMSf3JbQwFH-UVo7jus78dzAwDQ_-23lUq4b7nj4WcPcB08E3GlxcdDr3gZsPmBy1ISx2inw5jN355d9hSIPBjcn26C0x0cFMhikqtLHJzdFi7E6Ryi7KaqHGUtildaGLRxfpvzc-XBCJCLMbpbE9qu683kcD37ZCAmL_tr3CRReccTtlmZ0YaJpa_a-4gP2L_9ljf29mGYvHkbSC-LkI30GzoUYG0Ykh6GB4Na_CwN" alt="Carlos Mendes" loading="lazy">
+                    <div>
+                      <h4 class="font-montserrat font-bold">Carlos Mendes</h4>
+                      <p class="text-sm text-on-light-muted">Supervisor de Segurança — Petrobras</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-1 mb-4">
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                  </div>
+                  <p class="text-on-light-muted italic leading-relaxed">"A qualidade do treinamento de NR 35 superou nossas expectativas. Instrutores experientes e equipamentos impecáveis. Recomendamos para toda a indústria."</p>
+                </div>
+              </div>
+
+              <div class="testimonial-slide">
+                <div class="testimonial-card">
+                  <div class="flex items-center gap-4 mb-5">
+                    <img class="testimonial-avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8oQvF_gjhO1EzYorO6acQrSti1kwIDG1_LPM0QszlO46g5tUKjl_veqxE_g8h-vWUPYZJJwlNa1RKa9VeqxTxu5zms-SJPgcp4kwcJVNxw_vNPiubF4EmTQZOXXor0rL5Jqk59m9JB3Gb3j4MuV3_LF3CH2RaGbrrELSg3yGVTGa6gSya6HDASg9pxLGKGFsRLlaOIIVJFiG1KCpTpQVvWn3jyce4xx1VkhMzYxHDH9nU3pa2gdlyCvCuFXrN3Drw2OIUs1COi5hV" alt="Mariana Santos" loading="lazy">
+                    <div>
+                      <h4 class="font-montserrat font-bold">Mariana Santos</h4>
+                      <p class="text-sm text-on-light-muted">Bombeira Civil Certificada</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-1 mb-4">
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                  </div>
+                  <p class="text-on-light-muted italic leading-relaxed">"Realizei meu sonho de ser bombeiro civil. A Leal me preparou com seriedade e dedicação. As aulas práticas foram o diferencial na minha aprovação."</p>
+                </div>
+              </div>
+
+              <div class="testimonial-slide">
+                <div class="testimonial-card">
+                  <div class="flex items-center gap-4 mb-5">
+                    <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=128&q=80" alt="Roberto Almeida" loading="lazy">
+                    <div>
+                      <h4 class="font-montserrat font-bold">Roberto Almeida</h4>
+                      <p class="text-sm text-on-light-muted">Gerente de RH — Construtora</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-1 mb-4">
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                  </div>
+                  <p class="text-on-light-muted italic leading-relaxed">"Contratamos treinamentos in-company para 200 colaboradores. Pontualidade, organização e certificação sem burocracia. Parceiro estratégico de segurança."</p>
+                </div>
+              </div>
+
+              <div class="testimonial-slide">
+                <div class="testimonial-card">
+                  <div class="flex items-center gap-4 mb-5">
+                    <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=128&q=80" alt="Mariana Costa" loading="lazy">
+                    <div>
+                      <h4 class="font-montserrat font-bold">Mariana Costa</h4>
+                      <p class="text-sm text-on-light-muted">Técnica de Segurança — Ambev</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-1 mb-4">
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                    <span class="material-symbols-outlined star text-lg">star</span>
+                  </div>
+                  <p class="text-on-light-muted italic leading-relaxed">"Excelência em primeiros socorros. Nossa brigada saiu muito mais preparada. O simulador de RCP com feedback em tempo real fez toda a diferença."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-btn hidden md:flex flex-shrink-0" id="carousel-next" aria-label="Próximo">
+            <span class="material-symbols-outlined">chevron_right</span>
+          </button>
+        </div>
+
+        <div class="carousel-dots" id="carousel-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporativo -->
+  <section class="section-pad bg-navy text-white relative overflow-hidden" id="corporativo">
+    <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;" aria-hidden="true"></div>
+
+    <div class="max-w-content mx-auto px-6 relative z-10">
+      <div class="text-center mb-16 reveal">
+        <span class="section-label text-yellow-safety">B2B</span>
+        <h2 class="section-title text-white">Soluções Corporativas</h2>
+        <div class="section-divider"></div>
+        <p class="text-on-dark-muted mt-6 max-w-2xl mx-auto">Treinamentos personalizados para empresas de todos os portes, com equipe itinerante e consultoria especializada.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children reveal">
+        <div class="corporate-card">
+          <span class="material-symbols-outlined text-yellow-safety text-4xl mb-4 block">business</span>
+          <h3 class="font-montserrat font-bold text-lg mb-2">Treinamentos In-Company</h3>
+          <p class="text-on-dark-muted text-sm">Levamos toda a estrutura até sua empresa, minimizando paradas operacionais.</p>
+        </div>
+        <div class="corporate-card">
+          <span class="material-symbols-outlined text-yellow-safety text-4xl mb-4 block">engineering</span>
+          <h3 class="font-montserrat font-bold text-lg mb-2">Consultoria em Segurança</h3>
+          <p class="text-on-dark-muted text-sm">Diagnóstico, plano de ação e acompanhamento para conformidade com NRs.</p>
+        </div>
+        <div class="corporate-card">
+          <span class="material-symbols-outlined text-yellow-safety text-4xl mb-4 block">description</span>
+          <h3 class="font-montserrat font-bold text-lg mb-2">Elaboração de Laudos</h3>
+          <p class="text-on-dark-muted text-sm">Laudos técnicos, PPRA, PCMSO e documentação exigida por fiscalização.</p>
+        </div>
+        <div class="corporate-card">
+          <span class="material-symbols-outlined text-yellow-safety text-4xl mb-4 block">local_fire_department</span>
+          <h3 class="font-montserrat font-bold text-lg mb-2">Terceirização de Bombeiros</h3>
+          <p class="text-on-dark-muted text-sm">Profissionais qualificados para plantões e cobertura de eventos corporativos.</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-12 reveal">
+        <a class="btn-primary inline-flex items-center gap-2 px-10 py-4" href="#contato">
+          Solicitar Orçamento Corporativo
+          <span class="material-symbols-outlined">request_quote</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="section-pad bg-gray-light" id="blog">
+    <div class="max-w-content mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16 reveal">
+        <div>
+          <span class="section-label">Central de Conhecimento</span>
+          <h2 class="section-title">Últimas do Blog</h2>
+        </div>
+        <a class="nav-link text-red-alert font-semibold text-sm" href="#">Ver todos os artigos →</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 stagger-children reveal">
+        <article class="blog-card">
+          <div class="overflow-hidden aspect-video">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtzQgBfrjzaW6kf16GP2v7OLezLcnO_eO82-FupAr7oICI57dRtYpp2ovVvfsAMQF2nZD7ecEY1CB9kzgZXTn4z48kUigmPOkyiw8DO3quLVMLVCo8jzVe0HqYYimxQC1MaHspFVnX9gxeRYRRUxc6i-BovZZZGMlVPwpIHNQYaNA2jnRQbjY-tkM38IHubpVEBsE7Rk1fiUcjVk8NXGlx8ep5VlDzQN4dU6mIrRXJ6YN5MfyuyKYAOsJTZaH0OifuC36bIHncUqnL" alt="Guia NR 35 trabalho em altura" class="w-full h-full object-cover" loading="lazy">
+          </div>
+          <div class="p-6">
+            <span class="blog-date">15 Jun 2026</span>
+            <h3 class="font-montserrat font-bold text-lg mt-2 mb-3">Guia Completo da NR 35 para Empresas</h3>
+            <p class="text-on-light-muted text-sm mb-4">Tudo o que sua empresa precisa saber sobre conformidade em trabalho em altura.</p>
+            <a class="text-red-alert font-semibold text-sm nav-link inline-block" href="#">Ler artigo</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="overflow-hidden aspect-video">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuANSchLpJr3mTTLuU2rfA_Rz8CeOpvnT1YCFfKrq3XeBwL9SwjyZagKnCigvgOFEnPzBhii_zE-yWe7hUgD0O4ToE6Z_hVLW1rhYeX2kb48l5xlRmXaKfLK6Ai_WOTejlcGaB7IzOWgNi7KlgUyIqC-miiUXuaPW64D42oT3Q6eUs7Hx-O6sQVdRxOdN1b1sRaQrGWPyeP9vp5U5ggEWqLzLtXq3rtgBI0YylCT_TXR3Uh5dwZeMvlQqmYh8f9tUV_iNgFOgzy8AtUN" alt="Brigada de incêndio" class="w-full h-full object-cover" loading="lazy">
+          </div>
+          <div class="p-6">
+            <span class="blog-date">08 Jun 2026</span>
+            <h3 class="font-montserrat font-bold text-lg mt-2 mb-3">Como Montar uma Brigada de Incêndio Eficiente</h3>
+            <p class="text-on-light-muted text-sm mb-4">Passo a passo para formar e manter uma brigada preparada para emergências.</p>
+            <a class="text-red-alert font-semibold text-sm nav-link inline-block" href="#">Ler artigo</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="overflow-hidden aspect-video">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPQfqHhds-pi6VHK2lFPni1-4j6qGzMuujzonm4hI8MYNd6j-I8gabUogh95ibNyVZlYqWt_tnCEk-b-31sJNTySyesmDXYCB-fenMIFhEGqXgopgPetRHZUpYNdisZcWgF8erUP7eEiRExaJyMdQZsNjtIuWXOj1hwTR7EcciEul2kSYvEJ4uuR_myLg4B23xZrIN9OUjTCOgo9QO5oPeGgwhJjlo63oTzfM7KxSdkcdmuyRqNt7SqUz5D8LeN-5JwyctHZeKFmCT" alt="Primeiros socorros" class="w-full h-full object-cover" loading="lazy">
+          </div>
+          <div class="p-6">
+            <span class="blog-date">01 Jun 2026</span>
+            <h3 class="font-montserrat font-bold text-lg mt-2 mb-3">5 Erros Comuns em Primeiros Socorros</h3>
+            <p class="text-on-light-muted text-sm mb-4">Evite equívocos que podem agravar uma situação de emergência no ambiente de trabalho.</p>
+            <a class="text-red-alert font-semibold text-sm nav-link inline-block" href="#">Ler artigo</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-pad bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <span class="section-label">Dúvidas</span>
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="accordion reveal">
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" type="button">
+            Como faço minha matrícula em um curso?
+            <span class="material-symbols-outlined accordion-icon">add</span>
+          </button>
+          <div class="accordion-content">
+            <p class="text-on-light-muted leading-relaxed">Você pode se matricular pelo formulário de contato, WhatsApp ou telefone. Nossa equipe confirmará vagas, datas e formas de pagamento (PIX, boleto ou cartão).</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" type="button">
+            Os certificados são reconhecidos oficialmente?
+            <span class="material-symbols-outlined accordion-icon">add</span>
+          </button>
+          <div class="accordion-content">
+            <p class="text-on-light-muted leading-relaxed">Sim. Nossos certificados são emitidos conforme exigências das NRs e do Corpo de Bombeiros, válidos em todo território nacional.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" type="button">
+            Vocês oferecem treinamentos in-company?
+            <span class="material-symbols-outlined accordion-icon">add</span>
+          </button>
+          <div class="accordion-content">
+            <p class="text-on-light-muted leading-relaxed">Sim. Realizamos treinamentos in-company em todo o Rio de Janeiro e região, com equipe itinerante e equipamentos portáteis. Solicite um orçamento personalizado.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" type="button">
+            Qual a carga horária mínima para reciclagem?
+            <span class="material-symbols-outlined accordion-icon">add</span>
+          </button>
+          <div class="accordion-content">
+            <p class="text-on-light-muted leading-relaxed">Varia conforme a NR. Geralmente a reciclagem é anual ou bienal. Consulte nossa equipe para verificar a periodicidade exigida para seu curso específico.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner section-pad bg-charcoal relative">
+    <div class="relative z-10 max-w-content mx-auto px-6 text-center reveal-scale">
+      <h2 class="font-display text-3xl md:text-5xl mb-6 uppercase text-on-dark">Pronto para Capacitar sua Equipe?</h2>
+      <p class="text-on-dark-muted mb-10 max-w-xl mx-auto">Garanta conformidade, segurança e excelência com a referência em treinamentos do Rio de Janeiro.</p>
+      <a class="btn-primary inline-flex items-center gap-2 px-12 py-5 text-lg" href="#contato">
+        Matricule-se Agora
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="section-pad bg-gray-light" id="contato">
+    <div class="max-w-content mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <span class="section-label">Fale Conosco</span>
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <form class="reveal-left bg-white rounded-2xl p-8 shadow-lg" data-validate-form novalidate>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
+            <div class="form-group">
+              <label class="form-label" for="nome">Nome</label>
+              <input class="form-input" id="nome" name="nome" type="text" data-required placeholder="Seu nome completo">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">E-mail</label>
+              <input class="form-input" id="email" name="email" type="email" data-required placeholder="seu@email.com">
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
+            <div class="form-group">
+              <label class="form-label" for="telefone">Telefone / WhatsApp</label>
+              <input class="form-input" id="telefone" name="telefone" type="tel" data-required placeholder="(21) 99999-9999">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="assunto">Assunto</label>
+              <select class="form-input" id="assunto" name="assunto" data-required>
+                <option value="">Selecione...</option>
+                <option>Matrícula em Curso</option>
+                <option>Orçamento Corporativo</option>
+                <option>Informações Gerais</option>
+                <option>Reciclagem</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group mb-6">
+            <label class="form-label" for="mensagem">Mensagem</label>
+            <textarea class="form-input resize-none" id="mensagem" name="mensagem" rows="4" data-required placeholder="Como podemos ajudar?"></textarea>
+          </div>
+          <label class="flex items-start gap-3 text-sm text-on-light-muted mb-6 cursor-pointer">
+            <input class="mt-1 shrink-0" type="checkbox" name="lgpd_consent" data-required>
+            <span>Li e concordo com a <a class="text-red-alert underline" href="privacidade.html">Política de Privacidade</a> e autorizo o tratamento dos meus dados para atendimento desta solicitação, conforme a LGPD.</span>
+          </label>
+          <button class="btn-primary relative w-full py-4 text-base" type="submit">
+            <span class="btn-text">Enviar Mensagem</span>
+            <span class="btn-spinner"></span>
+          </button>
+          <p class="form-success hidden mt-4 text-center text-green-600 font-medium">Mensagem enviada com sucesso! Retornaremos em breve.</p>
+        </form>
+
+        <div class="reveal-right space-y-8">
+          <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <h3 class="font-montserrat font-bold text-xl mb-6">Nossos Contatos</h3>
+            <ul class="space-y-5">
+              <li class="flex items-start gap-4">
+                <span class="material-symbols-outlined text-red-alert">call</span>
+                <div>
+                  <p class="font-semibold">Telefone</p>
+                  <a class="text-on-light-muted hover:text-red-alert transition-colors" href="tel:+5521964692647">(21) 96469-2647</a>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <svg class="icon-whatsapp w-6 h-6 fill-[#25D366] shrink-0 mt-0.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <div>
+                  <p class="font-semibold">WhatsApp</p>
+                  <a class="text-on-light-muted hover:text-red-alert transition-colors" href="https://wa.me/5521964692647?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20cursos%20da%20Leal%20Treinamentos." target="_blank" rel="noopener">Iniciar conversa</a>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="material-symbols-outlined text-red-alert">mail</span>
+                <div>
+                  <p class="font-semibold">E-mail</p>
+                  <a class="text-on-light-muted hover:text-red-alert transition-colors" href="mailto:lealtreinamentosltda@gmail.com">lealtreinamentosltda@gmail.com</a>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="material-symbols-outlined text-red-alert">location_on</span>
+                <div>
+                  <p class="font-semibold">Endereço</p>
+                  <p class="text-on-light-muted">Rio de Janeiro, RJ — Centro de Treinamentos Leal</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="material-symbols-outlined text-red-alert">schedule</span>
+                <div>
+                  <p class="font-semibold">Horário de Atendimento</p>
+                  <p class="text-on-light-muted">Seg a Sex: 8h às 18h | Sáb: 8h às 12h</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg h-64 bg-charcoal/10">
+            <iframe
+              title="Localização Leal Treinamentos"
+              src="https://maps.google.com/maps?q=Rio+de+Janeiro&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style="border:0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-white pt-20 pb-10">
+    <div class="max-w-content mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div class="lg:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <svg class="w-8 h-8 fill-red-alert" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <span class="font-montserrat font-extrabold text-lg">LEAL</span>
+          </div>
+          <p class="text-on-dark-muted text-sm leading-relaxed mb-6">Referência em capacitação e segurança do trabalho. Formando profissionais preparados há mais de 25 anos.</p>
+          <div class="flex gap-3">
+            <a class="social-icon" href="#" aria-label="Instagram">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.607.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.063 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.245-2.242-1.308-3.607-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.245 3.607-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.058-1.281.072-1.689.072-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.058-1.69-.072-4.948-.072zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.881 0 1.44 1.44 0 012.881 0z"/></svg>
+            </a>
+            <a class="social-icon" href="#" aria-label="Facebook">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a class="social-icon" href="#" aria-label="LinkedIn">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.062 2.062 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a class="social-icon" href="https://wa.me/5521964692647" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-montserrat font-bold mb-6">Links Rápidos</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a class="footer-link" href="index.html">Início</a></li>
+            <li><a class="footer-link" href="cursos.html">Cursos</a></li>
+            <li><a class="footer-link" href="corporativo.html">Corporativo</a></li>
+            <li><a class="footer-link" href="sobre.html">Sobre Nós</a></li>
+            <li><a class="footer-link" href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-montserrat font-bold mb-6">Cursos</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a class="footer-link" href="cursos.html">Bombeiro Civil</a></li>
+            <li><a class="footer-link" href="cursos.html">NR 35</a></li>
+            <li><a class="footer-link" href="cursos.html">Primeiros Socorros</a></li>
+            <li><a class="footer-link" href="cursos.html">Brigada de Incêndio</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-montserrat font-bold mb-6">Newsletter</h4>
+          <p class="text-on-dark-muted text-sm mb-4">Receba dicas de segurança e novidades dos cursos.</p>
+          <form class="flex gap-2" data-validate-form novalidate>
+            <input class="form-input flex-1 text-sm py-2" type="email" data-required placeholder="Seu e-mail">
+            <button class="btn-primary px-4 py-2 text-sm relative" type="submit">
+              <span class="btn-text material-symbols-outlined">send</span>
+              <span class="btn-spinner"></span>
+            </button>
+          </form>
+          <p class="form-success hidden mt-2 text-green-400 text-xs">Inscrito com sucesso!</p>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-on-dark-subtle text-xs">
+        <span>© 2026 Leal Treinamentos. Todos os direitos reservados.</span>
+        <div class="flex gap-6">
+          <a class="footer-link text-xs" href="privacidade.html">Política de Privacidade</a>
+          <a class="footer-link text-xs" href="termos.html">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a class="whatsapp-float" href="https://wa.me/5521964692647?text=Olá! Gostaria de mais informações sobre os cursos da Leal Treinamentos." target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg class="w-8 h-8 fill-white icon-whatsapp" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/cookies.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

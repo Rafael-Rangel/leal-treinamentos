@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#eef1f6",
+                    "surface-variant": "#e0e3e8",
+                    "on-surface-variant": "#5b403f",
+                    "on-primary-fixed": "#410007",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#f7f9ff",
+                    "pure-white": "#FFFFFF",
+                    "primary-fixed-dim": "#ffb3b1",
+                    "inverse-surface": "#2d3135",
+                    "on-tertiary-fixed-variant": "#36485f",
+                    "on-primary-fixed-variant": "#92001c",
+                    "on-secondary-fixed": "#231b00",
+                    "tertiary-fixed-dim": "#b6c8e4",
+                    "on-secondary": "#ffffff",
+                    "primary": "#b7102a",
+                    "primary-container": "#db313f",
+                    "surface-container-highest": "#e0e3e8",
+                    "secondary-container": "#fed023",
+                    "inverse-primary": "#ffb3b1",
+                    "surface-container": "#ebeef3",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffe084",
+                    "on-tertiary-container": "#fdfcff",
+                    "on-secondary-container": "#6f5900",
+                    "background": "#f7f9ff",
+                    "secondary": "#735c00",
+                    "on-background": "#181c20",
+                    "surface-tint": "#bb152c",
+                    "tertiary-fixed": "#d3e4ff",
+                    "secondary-fixed-dim": "#eec209",
+                    "surface": "#f7f9ff",
+                    "on-tertiary-fixed": "#091c32",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#e4bebc",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#181c20",
+                    "navy-authority": "#1A2C42",
+                    "surface-container-high": "#e5e8ee",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#d7dadf",
+                    "primary-fixed": "#ffdad8",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#64768f",
+                    "on-secondary-fixed-variant": "#574500",
+                    "tertiary": "#4c5d75",
+                    "on-primary-container": "#fffbff",
+                    "surface-light": "#F8F9FA",
+                    "outline": "#8f6f6e",
+                    "surface-container-low": "#f1f4f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "20px",
+                    "section-gap-lg": "120px",
+                    "stack-sm": "8px",
+                    "margin-mobile": "20px",
+                    "stack-md": "16px",
+                    "section-gap-md": "80px",
+                    "margin-desktop": "80px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Montserrat"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "display-hero": ["Montserrat"],
+                    "display-hero-mobile": ["Montserrat"],
+                    "body-lg": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "body-md": ["Inter"],
+                    "caption": ["Inter"],
+                    "headline-lg": ["Montserrat"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "display-hero": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "display-hero-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-md": ["16px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .course-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 20px 40px rgba(0,0,0,0.1);
+        }
+        .nav-underline {
+            position: relative;
+        }
+        .nav-underline::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            background-color: #b7102a;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        .nav-underline:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="bg-surface/85 backdrop-blur-md dark:bg-navy-authority/85 docked full-width top-0 sticky z-50 border-b border-outline-variant/30 shadow-sm">
+<nav class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-on-background dark:text-surface-bright">
+                Leal Treinamentos
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="nav-underline font-label-md text-label-md text-on-background/80 hover:text-primary transition-all duration-300" href="#">Home</a>
+<a class="nav-underline font-label-md text-label-md text-primary dark:text-primary-fixed border-b-2 border-primary pb-1 transition-all duration-300" href="#">Cursos</a>
+<a class="nav-underline font-label-md text-label-md text-on-background/80 hover:text-primary transition-all duration-300" href="#">Soluções B2B</a>
+<a class="nav-underline font-label-md text-label-md text-on-background/80 hover:text-primary transition-all duration-300" href="#">Sobre Nós</a>
+<a class="nav-underline font-label-md text-label-md text-on-background/80 hover:text-primary transition-all duration-300" href="#">Contato</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:scale-102 transition-transform duration-300">
+                Solicitar Orçamento
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-24 pb-16 px-margin-desktop max-w-container-max mx-auto">
+<div class="max-w-3xl">
+<nav class="flex items-center gap-2 mb-4 text-on-background/60">
+<span class="font-caption text-caption">Início</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-caption text-caption font-bold text-primary">Cursos</span>
+</nav>
+<h1 class="font-display-hero text-display-hero md:text-display-hero text-display-hero-mobile mb-6">Nossos Treinamentos</h1>
+<p class="font-body-lg text-body-lg text-on-background/70 max-w-2xl">
+                    Capacitação técnica de alto nível com foco em segurança industrial, conformidade normativa e excelência operacional.
+                </p>
+</div>
+</section>
+<!-- Filter Bar -->
+<section class="bg-surface-container-low border-y border-outline-variant/20 sticky top-[72px] z-40">
+<div class="max-w-container-max mx-auto px-margin-desktop py-6 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-2 bg-primary text-on-primary rounded-full font-label-md text-label-md transition-all">Todos</button>
+<button class="px-6 py-2 bg-pure-white border border-outline-variant/50 hover:border-primary text-on-background rounded-full font-label-md text-label-md transition-all">NRs</button>
+<button class="px-6 py-2 bg-pure-white border border-outline-variant/50 hover:border-primary text-on-background rounded-full font-label-md text-label-md transition-all">Formação</button>
+<button class="px-6 py-2 bg-pure-white border border-outline-variant/50 hover:border-primary text-on-background rounded-full font-label-md text-label-md transition-all">Saúde</button>
+<button class="px-6 py-2 bg-pure-white border border-outline-variant/50 hover:border-primary text-on-background rounded-full font-label-md text-label-md transition-all">Segurança</button>
+</div>
+<div class="relative w-full md:w-80">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-background/40">search</span>
+<input class="w-full pl-10 pr-4 py-2 rounded-lg border border-outline-variant/30 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="Buscar treinamento..." type="text"/>
+</div>
+</div>
+</section>
+<!-- Course Grid -->
+<section class="py-section-gap-md px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Course Card 1: NR 35 -->
+<div class="course-card bg-pure-white rounded-xl overflow-hidden border border-outline-variant/30 transition-all duration-300 flex flex-col">
+<div class="relative h-48 overflow-hidden">
+<div class="absolute top-3 left-3 z-10">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-caption text-caption font-bold shadow-sm">NR Especialista</span>
+</div>
+<img class="w-full h-full object-cover" data-alt="Cinematic shot of two industrial workers in vibrant orange jumpsuits wearing professional safety harnesses and helmets. They are standing on a metal scaffolding structure against a clear blue sky, demonstrating high-altitude safety procedures for NR 35 training. The lighting is bright and crisp, highlighting the technical details of their equipment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGeOZjTqhUY8kZTItW3bNCYvkbxSIV6ZgP4VD50b_yqWj-yT53SxIOOHC4nPb2xR78oSn33Nmgd-HgM4V0P_FWUeGAkeuK1HH3hQ1hqjvgyi4dBGIcmQEOjIimRO0GYXE-7oQbz1ZNzRwbUF4AFieylMuRs6MMW_5C4pPl8e8gBY4WsTo_k-Vv6woXoPd-Ame89UQOMDvjfl1P_moqsyZIvzDCiwscCXd96Up-QLBBcOXxSxHo5HDLBnVL2yLLc1GygCcAXi2f7Yue"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md mb-4 line-clamp-2">NR 35 - Trabalho em Altura</h3>
+<div class="flex flex-col gap-3 mb-8 text-on-background/70">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-md text-label-md">Carga Horária: 08h às 40h</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">school</span>
+<span class="font-label-md text-label-md">Formato: Presencial ou Híbrido</span>
+</div>
+</div>
+<button class="mt-auto w-full py-3 rounded-lg border-2 border-primary text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center justify-center gap-2 group">
+                            Saiba Mais
+                            <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Course Card 2: Primeiro Socorros -->
+<div class="course-card bg-pure-white rounded-xl overflow-hidden border border-outline-variant/30 transition-all duration-300 flex flex-col">
+<div class="relative h-48 overflow-hidden">
+<div class="absolute top-3 left-3 z-10">
+<span class="bg-surface-container-highest text-on-surface px-3 py-1 rounded-full font-caption text-caption font-bold shadow-sm">Saúde Ocupacional</span>
+</div>
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB_agZIT3WW3nHczlyw8fvqcBgKtJyeKMi348HlDkZUM7Kg3Zse_7ypjFQIjpgK8OciPteW2r_OotNmSZhLhBvmfYFDKVToZz_mFILQNWLkAnOZox0-gCFuv5usCmxJJwnCzbIspdqeXQAOr90mCG2Qf5Qn5yOVoDuKzHQ34ZOPRIyI4h5kXoRJwPgHDu9Y1m89mRdlrY39Xi2xAZD1D9TKwKGnqEArK6knDhwNlJh9wLQU-O96SnK3KMEYLbvw3QCt2aQzdNcH8-e"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md mb-4 line-clamp-2">Primeiros Socorros e Suporte à Vida</h3>
+<div class="flex flex-col gap-3 mb-8 text-on-background/70">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-md text-label-md">Carga Horária: 08h às 16h</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">school</span>
+<span class="font-label-md text-label-md">Formato: Prático Presencial</span>
+</div>
+</div>
+<button class="mt-auto w-full py-3 rounded-lg border-2 border-primary text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center justify-center gap-2 group">
+                            Saiba Mais
+                            <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Course Card 3: NR 10 -->
+<div class="course-card bg-pure-white rounded-xl overflow-hidden border border-outline-variant/30 transition-all duration-300 flex flex-col">
+<div class="relative h-48 overflow-hidden">
+<div class="absolute top-3 left-3 z-10">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-caption text-caption font-bold shadow-sm">Segurança Elétrica</span>
+</div>
+<img class="w-full h-full object-cover" data-alt="A professional electrician in protective gear and arc-flash clothing working on a complex high-voltage industrial panel. The scene is shot with a shallow depth of field, emphasizing the technical complexity and safety protocols of electrical training. Modern, clean industrial setting with cool blue and grey tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfqEybN0WiAN9tH9Np7Ts0EhLO22pVGXiiPYavi7t5Q7lYFk8yY9LcLD_yMAnH6TdUTZd5bbXl3twiOH0ztKrwlrr2Hfo9_L2LTjZJAYZKSXtcBNEMJh0UTLVqSFK8MJdxo4yj4mh19jPI5PZ-FMVTk_x4UzObLqg40egpmtGiDtLOniWARRmAO6xps34R4NrOokZn60FoVtkHa0dntcfYdcMihIRrY2zytuBz6ChDqHElrN8P7r2cIQ1dAVG_f2-Zle8LcYEfffyN"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md mb-4 line-clamp-2">NR 10 - Segurança em Instalações Elétricas</h3>
+<div class="flex flex-col gap-3 mb-8 text-on-background/70">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-md text-label-md">Carga Horária: 40h</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">school</span>
+<span class="font-label-md text-label-md">Formato: Híbrido</span>
+</div>
+</div>
+<button class="mt-auto w-full py-3 rounded-lg border-2 border-primary text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center justify-center gap-2 group">
+                            Saiba Mais
+                            <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Course Card 4: Brigada -->
+<div class="course-card bg-pure-white rounded-xl overflow-hidden border border-outline-variant/30 transition-all duration-300 flex flex-col">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Action shot of fire brigade training. A group of professionals in full firefighting turnout gear using a large fire extinguisher on a controlled flame. Dramatic outdoor setting with smoke and intense orange light from the fire, balanced by the cool daylight. Focus on teamwork and tactical safety response." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANSchLpJr3mTTLuU2rfA_Rz8CeOpvnT1YCFfKrq3XeBwL9SwjyZagKnCigvgOFEnPzBhii_zE-yWe7hUgD0O4ToE6Z_hVLW1rhYeX2kb48l5xlRmXaKfLK6Ai_WOTejlcGaB7IzOWgNi7KlgUyIqC-miiUXuaPW64D42oT3Q6eUs7Hx-O6sQVdRxOdN1b1sRaQrGWPyeP9vp5U5ggEWqLzLtXq3rtgBI0YylCT_TXR3Uh5dwZeMvlQqmYh8f9tUV_iNgFOgzy8AtUN"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md mb-4 line-clamp-2">Brigada de Incêndio (Nível Avançado)</h3>
+<div class="flex flex-col gap-3 mb-8 text-on-background/70">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-md text-label-md">Carga Horária: 24h</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">school</span>
+<span class="font-label-md text-label-md">Formato: Prático de Campo</span>
+</div>
+</div>
+<button class="mt-auto w-full py-3 rounded-lg border-2 border-primary text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center justify-center gap-2 group">
+                            Saiba Mais
+                            <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Course Card 5: NR 33 -->
+<div class="course-card bg-pure-white rounded-xl overflow-hidden border border-outline-variant/30 transition-all duration-300 flex flex-col">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Professional technician wearing a breathing apparatus and protective coveralls preparing to enter a confined space. High-fidelity equipment including air quality monitors and tripod recovery systems are visible. Professional lighting emphasizes the technical and high-stakes nature of the environment. Industrial grey and safety yellow palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0pXjztnIsuo_I9CDH13935W9x6_Z1b4IK3QBR7RwKzIBO09Xn0Dg2VqIs9i36mHn5eE_g8QTCMgwnMzIFmGvDTmgsNfw_uPKu0CfxDISzWSFHW0eg2hQ1_Ev1V_HRR5No-qSQAUw6Kz82VY10q3lvidszM8d4ZkwYDNAXVJ8nwogef9LYEBqOhmN1KMO3_0PSdJHU09amALviFbvm3bQZvemVQ7slNCugIsuyqH4XQVSnyzLbrNfuVq1q4UBrlvOp1OFojp4R6JuZ"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md mb-4 line-clamp-2">NR 33 - Espaço Confinado</h3>
+<div class="flex flex-col gap-3 mb-8 text-on-background/70">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-md text-label-md">Carga Horária: 16h às 40h</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">school</span>
+<span class="font-label-md text-label-md">Formato: Presencial</span>
+</div>
+</div>
+<button class="mt-auto w-full py-3 rounded-lg border-2 border-primary text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center justify-center gap-2 group">
+                            Saiba Mais
+                            <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Course Card 6: Empilhadeira -->
+<div class="course-card bg-pure-white rounded-xl overflow-hidden border border-outline-variant/30 transition-all duration-300 flex flex-col">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Modern logistics warehouse interior with a clean, high-visibility yellow forklift. A trainee in safety vest and helmet is operating the vehicle under professional supervision. The environment is orderly and perfectly lit, showcasing a premium training facility. High-contrast lighting with a clean, corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvhReQG4Lv7dcm7vAOWsVwB6FxvkOx30l7rmsUx3AI22UHC1KsUC6RRHyBQ1h1vXteAOAijHGQF66vSnfFGSMBxdB8GuN5DZOF7JKI_eF7nsjutGERBZ6fJoda9cOGphtZrNORNKlGPzZdrtvV3SRGCz8y7WXfsDRzIRrYghHo-KyQY7Awoch1SGs9D-mOS61JdWZ4sUQdcskUWvbcEZs9mfUW8ClvS0zIaTFvC07X_B1KmKrXRfhIb8NLG9SlB7E_wSCl3TxCceN2"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md mb-4 line-clamp-2">Operação Segura de Empilhadeira</h3>
+<div class="flex flex-col gap-3 mb-8 text-on-background/70">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-md text-label-md">Carga Horária: 20h</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">school</span>
+<span class="font-label-md text-label-md">Formato: Teórico e Prático</span>
+</div>
+</div>
+<button class="mt-auto w-full py-3 rounded-lg border-2 border-primary text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center justify-center gap-2 group">
+                            Saiba Mais
+                            <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-navy-authority text-pure-white py-section-gap-md px-margin-desktop overflow-hidden relative">
+<!-- Decorative abstract background element -->
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 bg-[radial-gradient(circle_at_center,_#b7102a_0%,_transparent_70%)]"></div>
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
+<div class="max-w-2xl text-center md:text-left">
+<h2 class="font-headline-lg text-headline-lg mb-6 leading-tight">Precisa de um treinamento customizado para sua empresa?</h2>
+<p class="font-body-lg text-body-lg text-surface-variant mb-8">
+                        Desenvolvemos programas sob medida para as necessidades específicas do seu setor industrial, garantindo máxima eficiência e conformidade.
+                    </p>
+<div class="flex flex-wrap gap-6 justify-center md:justify-start">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-headline-md text-headline-md hover:scale-105 transition-transform duration-300">
+                            Fale Conosco
+                        </button>
+<div class="flex items-center gap-4 text-surface-variant">
+<span class="material-symbols-outlined text-secondary-container">verified</span>
+<span class="font-label-md text-label-md">Consultoria B2B Especializada</span>
+</div>
+</div>
+</div>
+<div class="hidden lg:block w-80 h-80 border-4 border-primary/20 rounded-2xl rotate-12 relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale brightness-75" data-alt="A professional business meeting in a modern, glass-walled conference room. A consultant in a sharp suit is presenting a technical training plan to corporate executives. The atmosphere is professional, serious, and high-value. Natural light floods the room, creating a premium light-mode corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-fCfdQBfGKH9rMoi1TAbZUOg1AWQSiZRW1ASt2L-13pv1wZf79jtDOPSa3I-5t1eYMwCCqYVpyakPx0XER-fKW0T45j6JJKZbm1QbuQO1NqKIJql3Gt9oAij6M3brDDTbH2bzzVWs7X_6AErCheaL4WuKLrS6cQfKnRp8z7eYIGgndGwknymkMCUf5H7RAaWn1UvO911dn7WJoNHa6i18SVzuFIIM7GOEbu5YYf8YwnZyVcfYLYGpi4DTE0E2c2sqUci_XROchwD5"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-navy-authority dark:bg-on-background border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-section-gap-md px-margin-desktop py-section-gap-md max-w-container-max mx-auto">
+<div class="flex flex-col gap-6">
+<div class="font-headline-md text-headline-md text-pure-white">Leal Treinamentos</div>
+<p class="font-body-sm text-body-sm text-surface-variant">
+                    Excelência em treinamentos industriais e segurança do trabalho desde 2010. Formando profissionais com consciência e competência técnica.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-surface-variant/30 flex items-center justify-center text-surface-variant hover:text-primary-fixed hover:border-primary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-surface-variant/30 flex items-center justify-center text-surface-variant hover:text-primary-fixed hover:border-primary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined">play_circle</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-primary-fixed font-bold uppercase tracking-wider mb-2">Navegação</h4>
+<a class="font-body-sm text-body-sm text-surface-variant hover:text-pure-white transition-colors" href="#">Home</a>
+<a class="font-body-sm text-body-sm text-secondary-fixed font-bold" href="#">Cursos</a>
+<a class="font-body-sm text-body-sm text-surface-variant hover:text-pure-white transition-colors" href="#">Soluções B2B</a>
+<a class="font-body-sm text-body-sm text-surface-variant hover:text-pure-white transition-colors" href="#">Sobre Nós</a>
+<a class="font-body-sm text-body-sm text-surface-variant hover:text-pure-white transition-colors" href="#">Contato</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-primary-fixed font-bold uppercase tracking-wider mb-2">Categorias</h4>
+<a class="font-body-sm text-body-sm text-surface-variant hover:text-pure-white transition-colors" href="#">Normas Regulamentadoras</a>
+<a class="font-body-sm text-body-sm text-surface-variant hover:text-pure-white transition-colors" href="#">Trabalho em Altura</a>
+<a class="font-body-sm text-body-sm text-surface-variant hover:text-pure-white transition-colors" href="#">Primeiros Socorros</a>
+<a class="font-body-sm text-body-sm text-surface-variant hover:text-pure-white transition-colors" href="#">Espaço Confinado</a>
+<a class="font-body-sm text-body-sm text-surface-variant hover:text-pure-white transition-colors" href="#">Brigada de Incêndio</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-primary-fixed font-bold uppercase tracking-wider mb-2">Contato</h4>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-fixed mt-1">location_on</span>
+<span class="font-body-sm text-body-sm text-surface-variant">Av. Industrial, 1000 - Setor Sul<br/>São Paulo, SP</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed">call</span>
+<span class="font-body-sm text-body-sm text-surface-variant">(11) 4004-2020</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed">mail</span>
+<span class="font-body-sm text-body-sm text-surface-variant">contato@lealtreinamentos.com.br</span>
+</div>
+</div>
+</div>
+<div class="border-t border-white/5 py-8 px-margin-desktop max-w-container-max mx-auto text-center">
+<p class="font-body-sm text-body-sm text-surface-variant opacity-80 hover:opacity-100 transition-opacity cursor-default">
+                © 2024 Leal Treinamentos. Todos os direitos reservados. | <a class="hover:text-pure-white underline underline-offset-4" href="#">Privacidade</a>
+</p>
+</div>
+</footer>
+<!-- FAB: WhatsApp -->
+<a class="fixed bottom-8 right-8 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 z-[100] group" href="#">
+<span class="material-symbols-outlined text-[32px] fill">chat</span>
+<span class="absolute right-full mr-4 bg-white text-on-background px-4 py-2 rounded-lg text-sm font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">Fale Conosco agora!</span>
+</a>
+</body></html>

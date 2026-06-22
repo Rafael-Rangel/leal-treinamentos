@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="inner-page" lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos | Leal Treinamentos</title>
+  <meta name="description" content="Cursos de Bombeiro Civil, NRs 33/35/10, Brigada, Socorrista e Eletricista. Capacitação presencial no Rio de Janeiro.">
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="js/fonts-loader.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="js/tailwind-config.js"></script>
+  <script src="js/images.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/icons.js"></script>
+</head>
+<body class="bg-background font-inter text-charcoal">
+
+  <div id="site-preloader"></div>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero page-hero--dark relative flex items-center overflow-hidden min-h-[480px]">
+      <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover" data-leal-img="cursosBanner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAloslstDOQTit-9-9GpUfFZUBA1PlUR2l4NAK8hXNTF_K5oo_nTavVB-nIebT7lotnLDDkkDjL7o7cS9puNV7dWaCwMmB0VuZtPNJzwhZyVP4QHwDNpUtyQLqp5PdQtUC1hy81754JBYtX3I4XEB6uHvWofNdlpLswn67xvDu5W6aazDz51Tk0HDsTX4LTTHOV8JuQTZM7LluUDNGrDg_gqrPZcORULv4Cg7n8L-QbZ9kYyI84l12l5jSMdrNh2FA-o1F515rweDdo" alt="Instrutor conduzindo treinamento de bombeiro civil em ambiente industrial">
+        <div class="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/75 to-navy/40"></div>
+      </div>
+      <div class="relative z-10 max-w-content mx-auto px-6 lg:px-20 w-full pt-8 pb-12">
+        <nav class="flex items-center gap-2 mb-6 text-on-dark-subtle text-sm reveal">
+          <a class="hover:text-yellow-safety transition-colors" href="index.html">Início</a>
+          <span class="material-symbols-outlined text-sm">chevron_right</span>
+          <span class="font-semibold text-yellow-safety">Cursos</span>
+        </nav>
+        <div class="max-w-3xl reveal">
+          <span class="inline-block bg-yellow-safety text-charcoal px-4 py-1 rounded-full text-xs font-bold mb-4 uppercase tracking-wider">Catálogo Completo</span>
+          <h1 class="font-display text-4xl md:text-5xl lg:text-6xl text-white mb-6 leading-none uppercase">Nossos Treinamentos</h1>
+          <p class="text-on-dark text-lg leading-relaxed max-w-2xl">Cursos presenciais com certificação nacional — bombeiro civil, NRs e formação em segurança do trabalho no Rio de Janeiro.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-surface-light border-y border-charcoal/10 sticky top-[72px] z-40">
+      <div class="max-w-content mx-auto px-6 lg:px-20 py-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex flex-wrap gap-3" id="course-filters">
+          <button class="filter-chip active" data-filter="all" type="button">Todos</button>
+          <button class="filter-chip" data-filter="nr" type="button">NRs</button>
+          <button class="filter-chip" data-filter="formacao" type="button">Formação</button>
+          <button class="filter-chip" data-filter="saude" type="button">Saúde</button>
+          <button class="filter-chip" data-filter="seguranca" type="button">Segurança</button>
+        </div>
+        <div class="relative w-full md:w-80">
+          <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-charcoal/40">search</span>
+          <input class="form-input pl-10" id="course-search" placeholder="Buscar treinamento..." type="search">
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 lg:py-24 px-6 lg:px-20 max-w-content mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="course-grid">
+
+        <article class="course-card reveal bg-white rounded-xl overflow-hidden border border-charcoal/10 flex flex-col" data-category="formacao" data-title="Bombeiro Civil">
+          <div class="relative h-48 overflow-hidden">
+            <span class="course-tag">Formação</span>
+            <img class="w-full h-full object-cover" src="" alt="Bombeiro Civil" data-leal-img="bombeiroCivil">
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="font-montserrat font-bold text-lg mb-4">Bombeiro Civil</h3>
+            <div class="flex flex-col gap-3 mb-8 text-on-light-muted text-sm">
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">schedule</span> Carga Horária: 160h</div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">school</span> Formato: Presencial</div>
+            </div>
+            <a class="mt-auto w-full py-3 rounded-lg border-2 border-red-alert text-red-alert font-semibold hover:bg-red-alert hover:text-white transition-all flex items-center justify-center gap-2 group" href="contato.html">Saiba Mais <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+          </div>
+        </article>
+
+        <article class="course-card reveal bg-white rounded-xl overflow-hidden border border-charcoal/10 flex flex-col" data-category="nr" data-title="NR 35 Trabalho em Altura">
+          <div class="relative h-48 overflow-hidden">
+            <span class="course-tag">NR Especialista</span>
+            <img class="w-full h-full object-cover" src="" alt="NR 35" data-leal-img="nr35">
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="font-montserrat font-bold text-lg mb-4">NR 35 — Trabalho em Altura</h3>
+            <div class="flex flex-col gap-3 mb-8 text-on-light-muted text-sm">
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">schedule</span> Carga Horária: 8h a 40h</div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">school</span> Presencial ou Híbrido</div>
+            </div>
+            <a class="mt-auto w-full py-3 rounded-lg border-2 border-red-alert text-red-alert font-semibold hover:bg-red-alert hover:text-white transition-all flex items-center justify-center gap-2 group" href="contato.html">Saiba Mais <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+          </div>
+        </article>
+
+        <article class="course-card reveal bg-white rounded-xl overflow-hidden border border-charcoal/10 flex flex-col" data-category="nr" data-title="NR 33 Espaço Confinado">
+          <div class="relative h-48 overflow-hidden">
+            <span class="course-tag">NR Especialista</span>
+            <img class="w-full h-full object-cover" src="" alt="NR 33" data-leal-img="nr33">
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="font-montserrat font-bold text-lg mb-4">NR 33 — Espaço Confinado</h3>
+            <div class="flex flex-col gap-3 mb-8 text-on-light-muted text-sm">
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">schedule</span> Carga Horária: 16h a 40h</div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">school</span> Presencial</div>
+            </div>
+            <a class="mt-auto w-full py-3 rounded-lg border-2 border-red-alert text-red-alert font-semibold hover:bg-red-alert hover:text-white transition-all flex items-center justify-center gap-2 group" href="contato.html">Saiba Mais <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+          </div>
+        </article>
+
+        <article class="course-card reveal bg-white rounded-xl overflow-hidden border border-charcoal/10 flex flex-col" data-category="nr" data-title="NR 10 Segurança Elétrica">
+          <div class="relative h-48 overflow-hidden">
+            <span class="course-tag">Segurança Elétrica</span>
+            <img class="w-full h-full object-cover" src="" alt="NR 10" data-leal-img="nr10">
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="font-montserrat font-bold text-lg mb-4">NR 10 — Segurança em Eletricidade</h3>
+            <div class="flex flex-col gap-3 mb-8 text-on-light-muted text-sm">
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">schedule</span> Carga Horária: 40h</div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">school</span> Híbrido</div>
+            </div>
+            <a class="mt-auto w-full py-3 rounded-lg border-2 border-red-alert text-red-alert font-semibold hover:bg-red-alert hover:text-white transition-all flex items-center justify-center gap-2 group" href="contato.html">Saiba Mais <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+          </div>
+        </article>
+
+        <article class="course-card reveal bg-white rounded-xl overflow-hidden border border-charcoal/10 flex flex-col" data-category="saude" data-title="Socorrista Primeiros Socorros">
+          <div class="relative h-48 overflow-hidden">
+            <span class="course-tag">Saúde Ocupacional</span>
+            <img class="w-full h-full object-cover" src="" alt="Socorrista" data-leal-img="primeirosSocorros">
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="font-montserrat font-bold text-lg mb-4">Socorrista / Primeiros Socorros</h3>
+            <div class="flex flex-col gap-3 mb-8 text-on-light-muted text-sm">
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">schedule</span> Carga Horária: 8h a 16h</div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">school</span> Prático Presencial</div>
+            </div>
+            <a class="mt-auto w-full py-3 rounded-lg border-2 border-red-alert text-red-alert font-semibold hover:bg-red-alert hover:text-white transition-all flex items-center justify-center gap-2 group" href="contato.html">Saiba Mais <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+          </div>
+        </article>
+
+        <article class="course-card reveal bg-white rounded-xl overflow-hidden border border-charcoal/10 flex flex-col" data-category="seguranca" data-title="Brigada de Incêndio">
+          <div class="relative h-48 overflow-hidden">
+            <img class="w-full h-full object-cover" src="" alt="Brigada de Incêndio" data-leal-img="brigada">
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="font-montserrat font-bold text-lg mb-4">Brigada de Incêndio</h3>
+            <div class="flex flex-col gap-3 mb-8 text-on-light-muted text-sm">
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">schedule</span> Carga Horária: 24h</div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">school</span> Prático de Campo</div>
+            </div>
+            <a class="mt-auto w-full py-3 rounded-lg border-2 border-red-alert text-red-alert font-semibold hover:bg-red-alert hover:text-white transition-all flex items-center justify-center gap-2 group" href="contato.html">Saiba Mais <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+          </div>
+        </article>
+
+        <article class="course-card reveal bg-white rounded-xl overflow-hidden border border-charcoal/10 flex flex-col" data-category="formacao" data-title="Bombeiro Mirim">
+          <div class="relative h-48 overflow-hidden">
+            <span class="course-tag">Formação</span>
+            <img class="w-full h-full object-cover" src="" alt="Bombeiro Mirim" data-leal-img="bombeiroCivil">
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="font-montserrat font-bold text-lg mb-4">Bombeiro Mirim</h3>
+            <div class="flex flex-col gap-3 mb-8 text-on-light-muted text-sm">
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">schedule</span> Carga Horária: 40h</div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">school</span> Presencial</div>
+            </div>
+            <a class="mt-auto w-full py-3 rounded-lg border-2 border-red-alert text-red-alert font-semibold hover:bg-red-alert hover:text-white transition-all flex items-center justify-center gap-2 group" href="contato.html">Saiba Mais <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+          </div>
+        </article>
+
+        <article class="course-card reveal bg-white rounded-xl overflow-hidden border border-charcoal/10 flex flex-col" data-category="seguranca" data-title="Eletricista Residencial Predial">
+          <div class="relative h-48 overflow-hidden">
+            <span class="course-tag">Segurança Elétrica</span>
+            <img class="w-full h-full object-cover" src="" alt="Eletricista" data-leal-img="nr10">
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="font-montserrat font-bold text-lg mb-4">Eletricista Residencial / Predial</h3>
+            <div class="flex flex-col gap-3 mb-8 text-on-light-muted text-sm">
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">schedule</span> Carga Horária: 160h</div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-red-alert text-lg">school</span> Teórico e Prático</div>
+            </div>
+            <a class="mt-auto w-full py-3 rounded-lg border-2 border-red-alert text-red-alert font-semibold hover:bg-red-alert hover:text-white transition-all flex items-center justify-center gap-2 group" href="contato.html">Saiba Mais <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="bg-navy text-white section-pad px-6 lg:px-20 overflow-hidden relative">
+      <div class="max-w-content mx-auto flex flex-col md:flex-row items-center justify-between gap-12 relative z-10 reveal">
+        <div class="max-w-2xl text-center md:text-left">
+          <h2 class="font-montserrat font-extrabold text-3xl mb-6">Precisa de um treinamento customizado?</h2>
+          <p class="text-on-dark-muted mb-8">Programas sob medida para o setor industrial — conformidade, produtividade e zero acidentes.</p>
+          <a class="btn-primary px-10 py-4 inline-flex" href="corporativo.html">Soluções Corporativas</a>
+        </div>
+        <div class="hidden lg:block w-72 h-72 rounded-2xl overflow-hidden border-4 border-red-alert/20 rotate-6">
+          <img class="w-full h-full object-cover grayscale brightness-75" src="" alt="Consultoria corporativa" data-leal-img="corporativo">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script>renderLealLayout('cursos', { preloader: true, heroMode: true });</script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/cookies.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script>
+    document.querySelectorAll('[data-leal-img]').forEach(function (el) {
+      var key = el.getAttribute('data-leal-img');
+      if (window.LEAL_IMAGES && window.LEAL_IMAGES[key]) el.src = window.LEAL_IMAGES[key];
+    });
+    var search = document.getElementById('course-search');
+    if (search) {
+      search.addEventListener('input', function () {
+        var q = search.value.toLowerCase().trim();
+        document.querySelectorAll('#course-grid [data-category]').forEach(function (card) {
+          var title = (card.dataset.title || card.querySelector('h3')?.textContent || '').toLowerCase();
+          card.style.display = !q || title.includes(q) ? '' : 'none';
+        });
+      });
+    }
+  </script>
+</body>
+</html>

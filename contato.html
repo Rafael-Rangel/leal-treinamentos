@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="inner-page" lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Leal Treinamentos</title>
+  <meta name="description" content="Entre em contato com a Leal Treinamentos. Telefone, WhatsApp e e-mail para cursos e soluções corporativas no Rio de Janeiro.">
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="js/fonts-loader.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="js/tailwind-config.js"></script>
+  <script src="js/images.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/icons.js"></script>
+</head>
+<body class="bg-background font-inter text-charcoal">
+
+  <div id="site-preloader"></div>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero page-hero--dark relative flex items-center overflow-hidden min-h-[480px]">
+      <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover" data-leal-img="contatoBanner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnELWXcv1LZBAlf1Dvyx5xnu7EQKY36kCI0SbKEuTa7ma48QboFpnUGhmWk6kKbuGCi8hULlvSMteH3srlC7Cebl3FwZ_HnriA9mkkhbT1Z8UIxSBDdQrIopyJhT0DEIwU7lQl7EPMzvdwEfVNQPJWFK1x61-KuUH0xaX2TeHcTjzoaIfbC4gI-eXpLuaUKBcj2JUAlJk14aTtPDGURjWeLXwjF4DgGUNfvvRlYe5f_jGbNyiziFIoz3sGGHJLwVll54WB97e5WqEJ" alt="Centro de treinamentos Leal — estrutura e infraestrutura">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/75 to-navy/35"></div>
+      </div>
+      <div class="relative z-10 max-w-content mx-auto px-6 lg:px-20 w-full pt-8 pb-12 text-center">
+        <div class="max-w-3xl mx-auto reveal">
+          <span class="inline-block bg-yellow-safety text-charcoal px-4 py-1 rounded-full text-xs font-bold mb-4 uppercase tracking-wider">Fale Conosco</span>
+          <h1 class="font-display text-4xl md:text-5xl lg:text-6xl text-white mb-6 leading-none uppercase">Entre em Contato</h1>
+          <p class="text-on-dark text-lg leading-relaxed max-w-2xl mx-auto">Fale com quem entende de segurança do trabalho. Orçamentos, matrículas e consultoria corporativa no Rio de Janeiro.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad px-6 lg:px-20 max-w-content mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-7 reveal-left">
+          <div class="bg-white p-8 md:p-12 rounded-2xl shadow-lg border border-charcoal/10">
+            <h2 class="font-montserrat font-bold text-2xl mb-2">Envie uma Mensagem</h2>
+            <p class="text-on-light-muted mb-8">Preencha o formulário e retornaremos em até 24 horas úteis.</p>
+            <form class="space-y-6" data-validate-form novalidate>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="form-group">
+                  <label class="form-label" for="name">Nome Completo</label>
+                  <input class="form-input" id="name" name="name" type="text" data-required placeholder="Seu nome">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">E-mail</label>
+                  <input class="form-input" id="email" name="email" type="email" data-required placeholder="seu@email.com">
+                </div>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="form-group">
+                  <label class="form-label" for="whatsapp">WhatsApp</label>
+                  <input class="form-input" id="whatsapp" name="whatsapp" type="tel" placeholder="(21) 99999-9999">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="subject">Assunto</label>
+                  <select class="form-input" id="subject" name="subject">
+                    <option value="">Selecione um assunto</option>
+                    <option value="orcamento">Orçamento para Empresas</option>
+                    <option value="curso">Inscrição em Cursos</option>
+                    <option value="b2b">Soluções Corporativas</option>
+                    <option value="suporte">Suporte Técnico</option>
+                    <option value="outros">Outros</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Sua Mensagem</label>
+                <textarea class="form-input resize-none" id="message" name="message" rows="5" data-required placeholder="Como podemos ajudar?"></textarea>
+              </div>
+              <label class="flex items-start gap-3 text-sm text-on-light-muted cursor-pointer">
+                <input class="mt-1 shrink-0" type="checkbox" name="lgpd_consent" data-required>
+                <span>Li e concordo com a <a class="text-red-alert underline" href="privacidade.html">Política de Privacidade</a> e autorizo o tratamento dos meus dados para atendimento desta solicitação, conforme a LGPD.</span>
+              </label>
+              <button class="btn-primary w-full py-4 relative" type="submit">
+                <span class="btn-text">Enviar Solicitação</span>
+                <span class="btn-spinner"></span>
+              </button>
+              <p class="form-success hidden text-green-600 text-sm text-center">Mensagem enviada com sucesso! Entraremos em contato em breve.</p>
+            </form>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 space-y-8 reveal-right">
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="bg-yellow-safety/20 text-red-alert p-3 rounded-lg"><span class="material-symbols-outlined">call</span></div>
+              <div>
+                <h3 class="font-semibold mb-1">Telefone</h3>
+                <a class="text-on-light-muted hover:text-red-alert transition-colors block" href="tel:+5521964692647">(21) 96469-2647</a>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="bg-yellow-safety/20 text-[#25D366] p-3 rounded-lg">
+                <svg class="icon-whatsapp w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-semibold mb-1">WhatsApp</h3>
+                <a class="text-on-light-muted hover:text-red-alert transition-colors block" href="https://wa.me/5521964692647?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20cursos%20da%20Leal%20Treinamentos." target="_blank" rel="noopener">(21) 96469-2647</a>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="bg-yellow-safety/20 text-red-alert p-3 rounded-lg"><span class="material-symbols-outlined">mail</span></div>
+              <div>
+                <h3 class="font-semibold mb-1">E-mail</h3>
+                <a class="text-on-light-muted hover:text-red-alert transition-colors" href="mailto:lealtreinamentosltda@gmail.com">lealtreinamentosltda@gmail.com</a>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="bg-yellow-safety/20 text-red-alert p-3 rounded-lg"><span class="material-symbols-outlined">location_on</span></div>
+              <div>
+                <h3 class="font-semibold mb-1">Localização</h3>
+                <p class="text-on-light-muted">Rio de Janeiro, RJ — Centro de Treinamentos Leal</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="bg-yellow-safety/20 text-red-alert p-3 rounded-lg"><span class="material-symbols-outlined">schedule</span></div>
+              <div>
+                <h3 class="font-semibold mb-1">Horário de Atendimento</h3>
+                <p class="text-on-light-muted">Segunda a Sexta: 08:00 às 18:00</p>
+                <p class="text-on-light-muted">Sábado: 08:00 às 12:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg h-64 border border-charcoal/10">
+            <iframe title="Localização Leal Treinamentos — Rio de Janeiro" src="https://maps.google.com/maps?q=Rio+de+Janeiro&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-surface-light py-16 px-6 lg:px-20 border-y border-charcoal/10">
+      <div class="max-w-content mx-auto flex flex-col md:flex-row items-center justify-between gap-8 reveal">
+        <div>
+          <h2 class="font-montserrat font-bold text-2xl mb-2">Prefere falar por WhatsApp?</h2>
+          <p class="text-on-light-muted">Atendimento imediato para consultoria técnica e orçamentos rápidos.</p>
+        </div>
+        <a class="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-montserrat font-bold hover:scale-105 transition-transform shadow-lg" href="https://wa.me/5521964692647?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20cursos%20da%20Leal%20Treinamentos." target="_blank" rel="noopener">
+          <svg class="icon-whatsapp w-6 h-6 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Iniciar Conversa no WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script>renderLealLayout('contato', { preloader: true, heroMode: true });</script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/cookies.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script>
+    document.querySelectorAll('[data-leal-img]').forEach(function (el) {
+      var key = el.getAttribute('data-leal-img');
+      if (window.LEAL_IMAGES && window.LEAL_IMAGES[key]) el.src = window.LEAL_IMAGES[key];
+    });
+  </script>
+</body>
+</html>
